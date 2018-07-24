@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x40"
+    android:background="@color/white"
+    >
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="@dimen/x40"
+        android:paddingLeft="@dimen/x13"
+        android:gravity="center_vertical"
+        android:text="问题"
+        android:id="@+id/tx"
+
+        android:layout_weight="1"/>
+
+    <ImageView
+        android:layout_width="@dimen/x40"
+        android:layout_height="@dimen/x40"
+        android:padding="@dimen/x13"
+        android:src="@drawable/right"/>
+
+</LinearLayout>

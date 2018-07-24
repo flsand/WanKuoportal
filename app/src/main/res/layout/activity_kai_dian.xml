@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.wankuoportal.ui.KaiDianActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolibar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/x42"
+            android:padding="@dimen/x13"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="开店接单赚钱"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:background="@drawable/dibeijing"
+        android:orientation="vertical"
+        android:padding="@dimen/x25">
+
+
+        <TextView
+            android:id="@+id/meitizhu_tx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/x5"
+            android:paddingLeft="@dimen/x13"
+            android:paddingRight="@dimen/x13"
+
+            android:paddingTop="@dimen/x5"
+            android:text="媒体主：微信、微博、网红、新闻媒体资源免费入驻开店赚钱，功能模式，投标、派单、雇佣、直接购买。有资源就发上来吧，让真正有需求的客户主动找上门。"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/x5"
+            android:paddingLeft="@dimen/x13"
+            android:paddingRight="@dimen/x13"
+            android:paddingTop="@dimen/x5">
+
+            <TextView
+                android:id="@+id/meitizhu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x42"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_login"
+                android:gravity="center"
+                android:text="立即下载，开店接单赚钱"
+                android:textColor="@color/huise" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/x5"
+            android:paddingLeft="@dimen/x13"
+            android:paddingRight="@dimen/x13"
+            android:paddingTop="@dimen/x5"
+            android:src="@drawable/xuxian" />
+
+        <TextView
+            android:id="@+id/guanggaozhu_tx"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/x5"
+            android:paddingLeft="@dimen/x13"
+            android:paddingRight="@dimen/x13"
+            android:paddingTop="@dimen/x5"
+            android:text="广告主；精准广告投放，把广告做成互动答题挑战游戏，让精准用户积极参与，并且可选年男女、职业、年龄、地区等，赠送免费店铺，购买、雇佣、投标一站式服务。"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/x5"
+            android:paddingLeft="@dimen/x13"
+            android:paddingRight="@dimen/x13"
+            android:paddingTop="@dimen/x5">
+
+            <TextView
+                android:id="@+id/guanggaozhu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x42"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_login"
+                android:gravity="center"
+                android:text="立即下载，投放广告提升业绩"
+                android:textColor="@color/huise" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/x5"
+            android:paddingLeft="@dimen/x13"
+            android:paddingRight="@dimen/x13"
+            android:paddingTop="@dimen/x5"
+            android:src="@drawable/xuxian" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/x5"
+            android:paddingLeft="@dimen/x13"
+            android:paddingRight="@dimen/x13"
+            android:id="@+id/fuwushang_tx"
+            android:paddingTop="@dimen/x5"
+            android:text="服务商：商务服务、生活服务、技术开发、营销推广服务免费入驻开店赚钱，功能模式，签保、投标、派单、雇佣、直接购买。免费招聘、让有需求的客户主动找上门"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/x5"
+            android:paddingLeft="@dimen/x13"
+            android:paddingRight="@dimen/x13"
+            android:paddingTop="@dimen/x5">
+
+            <TextView
+                android:id="@+id/fuwushang"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x42"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_login"
+                android:gravity="center"
+                android:text="立即下载，开店接单赚钱"
+                android:textColor="@color/huise" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

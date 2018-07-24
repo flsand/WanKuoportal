@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/base_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titleBarHeight"
+            android:background="?attr/colorPrimary"
+            android:paddingRight="16dp"
+            android:theme="@style/ToolbarPopupTheme">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/mian_fragment_city_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:maxWidth="60dp"
+                        android:singleLine="true"
+                        android:text="定位中..."
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x20"
+                        android:layout_height="@dimen/x20"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/x3"
+                        android:src="@drawable/xl" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:paddingBottom="@dimen/x5"
+                    android:paddingLeft="@dimen/x10"
+                    android:paddingRight="@dimen/x10"
+                    android:paddingTop="@dimen/x5">
+
+                    <LinearLayout
+                        android:id="@+id/search_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/yuanxingjujiao"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/x10">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/sousuo" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:background="@null"
+                            android:paddingLeft="@dimen/x10" />
+
+                        <ImageView
+                            android:layout_width="@dimen/x20"
+                            android:layout_height="@dimen/x20"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/yuyin"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/main_infomation_iv"
+                    android:layout_width="@dimen/x35"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:padding="@dimen/x5"
+                    android:src="@drawable/xiaoxi" />
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <com.example.administrator.wankuoportal.aaPackage.coustom.StickyNavLayout
+            android:id="@+id/main_fragment_stickyNavLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/myview_stickynavlayout_topview"
+                android:layout_width="match_parent"
+                android:layout_height="1380dp"
+                android:orientation="vertical">
+
+                <include layout="@layout/fragment_mian_top_layout" />
+
+            </LinearLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/myview_stickynavlayout_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/white"
+                app:tabGravity="fill"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="#ff4200"
+                app:tabTextColor="#323232" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/myview_stickynavlayout_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/grey"
+                android:overScrollMode="never">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </com.example.administrator.wankuoportal.aaPackage.coustom.StickyNavLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/main_fragment_up_bt"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="20dp"
+        android:visibility="gone"
+        android:background="@drawable/up_icon" />
+</RelativeLayout>

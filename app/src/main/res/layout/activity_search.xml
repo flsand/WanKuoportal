@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.wankuoportal.ui.search.SearchActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/base_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:background="?attr/colorPrimary"
+        android:paddingRight="16dp"
+        android:theme="@style/ToolbarPopupTheme">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/x5"
+                android:paddingTop="@dimen/x5">
+
+                <LinearLayout
+                    android:id="@+id/view"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/yuanxingjujiao"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/x5"
+                    android:paddingRight="@dimen/x5"
+                    android:paddingTop="@dimen/x5">
+
+                    <View
+                        android:layout_width="@dimen/x15"
+                        android:layout_height="match_parent"
+                        android:id="@+id/pop"/>
+
+                    <LinearLayout
+                        android:id="@+id/search_type_lin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/search_type_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="服务"
+                            android:textColor="@color/henhui" />
+
+                        <ImageView
+                            android:id="@+id/search_type_ima"
+                            android:layout_width="@dimen/x20"
+                            android:layout_height="@dimen/x20"
+                            android:paddingLeft="@dimen/x3"
+                            android:paddingRight="@dimen/x3"
+                            android:paddingTop="@dimen/x3"
+                            android:src="@drawable/ss" />
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:imeOptions="actionSearch"
+                        android:paddingLeft="@dimen/x10"
+                        android:id="@+id/editview"
+                        android:maxLines="1"
+                        android:inputType="text"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x20"
+                        android:layout_height="@dimen/x20"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/yuyin"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/back"
+                    android:layout_width="@dimen/x45"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="取消"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x13"
+        android:paddingRight="@dimen/x13">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/x13"
+            android:paddingTop="@dimen/x13"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="最近搜索" />
+
+            <ImageView
+                android:id="@+id/delete"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:padding="@dimen/x20"
+                android:src="@drawable/lj" />
+        </LinearLayout>
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/id_flowlayout_lishi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:auto_select_effect="false"
+            app:max_select="1"></com.zhy.view.flowlayout.TagFlowLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/x13"
+            android:paddingTop="@dimen/x13"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="热门搜索" />
+
+            <ImageView
+                android:id="@+id/shuaxin"
+                android:layout_width="@dimen/x20"
+                android:layout_height="@dimen/x20"
+                android:padding="@dimen/x2"
+                android:src="@drawable/hh" />
+        </LinearLayout>
+
+        <com.zhy.view.flowlayout.TagFlowLayout
+            android:id="@+id/id_flowlayout_remen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:auto_select_effect="false"
+            app:max_select="1"></com.zhy.view.flowlayout.TagFlowLayout>
+    </LinearLayout>
+</LinearLayout>

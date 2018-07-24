@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="@dimen/x13">
+
+    <ImageView
+        android:layout_width="@dimen/x168"
+        android:layout_height="@dimen/x168"
+        android:id="@+id/ima"
+        android:adjustViewBounds="true"
+        android:src="@drawable/d1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:minLines="2"
+        android:id="@+id/title"
+        android:padding="@dimen/x3"
+        android:text="企业网站建设网站开发网站" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="¥7950/套"
+        android:id="@+id/price"
+        android:paddingLeft="@dimen/x3"
+        android:textColor="@color/colorPrimary" />
+
+</LinearLayout>

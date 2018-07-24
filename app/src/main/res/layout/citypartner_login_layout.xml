@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/LinearLayoutStyles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x13"
+        android:focusable="true"
+        android:id="@+id/jiameng"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x62"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="我要加盟" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请选择加盟方式"
+            android:focusable="false"
+            android:id="@+id/jiameng_tx"
+            android:paddingLeft="@dimen/x5"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <LinearLayout
+        style="@style/LinearLayoutStyles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x13"
+        android:focusable="true"
+        android:id="@+id/chengshi"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x62"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="申请城市" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请选择申请城市"
+            android:paddingLeft="@dimen/x5"
+            android:focusable="false"
+            android:id="@+id/chengshi_tx"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/quyu"
+        style="@style/LinearLayoutStyles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:visibility="gone"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/x13">
+
+        <TextView
+            android:layout_width="@dimen/x62"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="申请区域" />
+
+        <EditText
+            android:id="@+id/quyu_tx"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:focusable="false"
+            android:hint="请选择申请城市区域"
+            android:paddingLeft="@dimen/x5"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+
+
+    <LinearLayout
+        style="@style/LinearLayoutStyles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x13"
+        android:focusable="true"
+        android:visibility="gone"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x62"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="资源优势" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入资源优势"
+            android:paddingLeft="@dimen/x5"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        style="@style/LinearLayoutStyles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x13"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x62"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="团队人数" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入团队人数"
+            android:id="@+id/ed_num"
+            android:inputType="number"
+            android:paddingLeft="@dimen/x5"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        style="@style/LinearLayoutStyles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x13"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x62"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="联系人" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入联系人"
+            android:id="@+id/ed_name"
+            android:paddingLeft="@dimen/x5"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        style="@style/LinearLayoutStyles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x13"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x62"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="电话" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:hint="请输入联系人电话"
+            android:id="@+id/ed_phone"
+            android:paddingLeft="@dimen/x5"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        style="@style/LinearLayoutStyles"
+        android:paddingTop="@dimen/x5"
+        android:paddingBottom="@dimen/x5"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="@dimen/x62"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="验证码" />
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:paddingLeft="@dimen/x5"
+            android:hint="请输入验证码"
+            android:id="@+id/ed_yzm"
+            android:textSize="15sp"
+            android:background="@null"/>
+
+        <TextView
+            android:layout_width="@dimen/x80"
+            android:layout_height="match_parent"
+            android:text="发送验证码"
+            android:padding="@dimen/x3"
+            android:id="@+id/sendcode"
+            android:background="@color/edittext"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x13">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x42"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_login"
+            android:gravity="center"
+            android:id="@+id/shenqing"
+            android:text="申请"
+            android:textColor="@color/huise" />
+    </RelativeLayout>
+</LinearLayout>

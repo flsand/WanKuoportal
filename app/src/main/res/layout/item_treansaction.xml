@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:minHeight="30dp"
+            android:orientation="horizontal">
+
+            <com.example.administrator.wankuoportal.util.CircleImageView
+                android:id="@+id/circleImageView"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/tou" />
+
+            <TextView
+                android:id="@+id/item_reansaction_phone_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/circleImageView"
+                android:textSize="14sp"
+                tools:text="187****983" />
+
+            <TextView
+                android:id="@+id/item_reansaction_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/item_reansaction_phone_tv"
+                android:textColor="@color/text_color_gray"
+                android:textSize="10sp"
+                tools:text="2018-09-28 16:00" />
+
+            <TextView
+                android:id="@+id/item_trading_count_tv"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_reansaction_phone_tv"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/circleImageView"
+                android:textColor="@color/text_color_gray"
+                android:textSize="10sp"
+                tools:text="交易:0  累计出售金币：0" />
+
+            <TextView
+                android:id="@+id/item_transaction_buy_gold_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/orange_or_gray_btn_selector"
+                android:padding="5dp"
+                android:text="@string/buy"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/item_transaction_count_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="出售数量"
+                android:textColor="@color/text_color_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/item_transaction_price_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="出售单价"
+                android:textColor="@color/text_color_gray"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/item_transaction_total_price_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="出售总价"
+                android:textColor="@color/text_color_gray"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/transaction_count_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="000"
+                android:textColor="@color/main_text_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/transaction_price_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="￥0.0"
+                android:textColor="@color/text_orange"
+                android:textSize="14sp" />
+
+            <com.example.administrator.wankuoportal.aaPackage.coustom.TimeTextView
+                android:id="@+id/transaction_total_price_tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="￥0.0"
+                android:textColor="@color/main_text_color"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

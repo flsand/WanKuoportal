@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="26dp"
+        android:layout_marginTop="30dp"
+        android:text="店铺名称：万店-万物互联"
+        android:textColor="@color/main_text_color"
+        android:textSize="16sp" />
+
+    <include layout="@layout/segmenting_crude_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal">
+
+        <com.flysand.mylibrary.customView.DrawableCenterTextView
+            android:id="@+id/addGoodsTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/shop01"
+            android:text="添加平台商品"
+            app:drawableHeight="52dp"
+            app:drawableWidth="52dp" />
+
+        <com.flysand.mylibrary.customView.DrawableCenterTextView
+            android:id="@+id/addRecommendTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/shop02"
+            android:text="添加店主推荐"
+            app:drawableHeight="52dp"
+            app:drawableWidth="52dp" />
+
+        <com.flysand.mylibrary.customView.DrawableCenterTextView
+            android:id="@+id/commodityManagementTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/shop03"
+            android:text="商品管理"
+            app:drawableHeight="52dp"
+            app:drawableWidth="52dp" />
+
+    </LinearLayout>
+
+    <include layout="@layout/segmenting_crude_line" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:paddingTop="30dp"
+        android:text="说明："
+        android:textColor="@color/main_text_color"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:lineSpacingExtra="12dp"
+        android:paddingTop="12dp"
+        android:text="1.可以选择商品添加到我的微店，添加完将在店铺显示商品。\n2.。。。\n3. 。。。"
+        android:textColor="@color/main_text_color"
+        android:textSize="14sp" />
+
+</LinearLayout>

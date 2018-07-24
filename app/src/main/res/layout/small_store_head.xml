@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.wankuoportal.ui.HuiYuanWoDe.MyJinBiActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!--我的万店Banner-->
+                <com.youth.banner.Banner
+                    android:id="@+id/smallStoreBanner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x150"
+                    tools:background="#FFF000" />
+
+                <!--圆形店长头像-->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="@dimen/x63"
+                    android:layout_height="@dimen/x63"
+                    android:layout_below="@id/smallStoreBanner"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/x15"
+                    android:layout_marginTop="-31.5dp"
+                    android:src="@drawable/tou" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/smallStoreBanner"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <com.flysand.mylibrary.customView.DrawableCenterTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="8dp"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/ewm"
+                        android:text="微店二维码"
+                        android:textSize="13sp"
+                        app:drawableHeight="38dp"
+                        app:drawableWidth="20dp" />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_margin="@dimen/x8"
+                            android:gravity="center"
+                            android:text="10"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:text="粉丝数"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+
+                    <com.flysand.mylibrary.customView.DrawableCenterTextView
+                        android:id="@+id/ll_small_store_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableTop="@drawable/dianhuaff4200"
+                        android:text="客服电话"
+                        android:textSize="13sp"
+                        app:drawableHeight="26dp"
+                        app:drawableWidth="26dp" />
+
+
+                    <!--android:src="@drawable/erweima"-->
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <include layout="@layout/segmenting_crude_line" />
+            <!--TabLayout-->
+            <RadioGroup
+                android:id="@+id/smallStoreRadioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <com.flysand.mylibrary.customView.DrawableCenterRadioButton
+                    android:id="@+id/smallStoreProductRb"
+                    style="@style/orange_radio_button"
+                    android:drawableTop="@drawable/rb_product_selector"
+                    android:text="全部产品"
+                    app:drawableHeight="18dp"
+                    app:drawableWidth="18dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:background="@color/divider"
+                    android:layout_gravity="center" />
+
+                <com.flysand.mylibrary.customView.DrawableCenterRadioButton
+                    android:id="@+id/smallStoreRecommendedRb"
+                    style="@style/orange_radio_button"
+                    android:drawableTop="@drawable/rb_recommended_selector"
+                    android:text="推荐产品"
+                    app:drawableHeight="18dp"
+                    app:drawableWidth="18dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:background="@color/divider"
+                    android:layout_gravity="center" />
+
+                <com.flysand.mylibrary.customView.DrawableCenterRadioButton
+                    android:id="@+id/smallStoreShoppingCartRb"
+                    style="@style/orange_radio_button"
+                    android:drawableTop="@drawable/rb_shopping_cart_selector"
+                    android:text="购物车"
+                    app:drawableHeight="18dp"
+                    app:drawableWidth="18dp" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:background="@color/divider"/>
+
+                <com.flysand.mylibrary.customView.DrawableCenterRadioButton
+                    android:id="@+id/smallStorePersonalCenterRb"
+                    style="@style/orange_radio_button"
+                    android:drawableTop="@drawable/rb_personal_center_rb"
+                    android:text="个人中心"
+                    app:drawableHeight="18dp"
+                    app:drawableWidth="18dp" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@color/divider">
+
+                <ImageView
+                    android:id="@+id/smallStoreLineView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/text_orange" />
+            </LinearLayout>
+            <!---->
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

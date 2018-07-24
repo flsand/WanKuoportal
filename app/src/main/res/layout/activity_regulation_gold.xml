@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="WK币交易大厅交易规则"
+            android:textColor="@color/main_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:lineSpacingExtra="5dp"
+            android:text="\t\t万阔WK币交易大厅本着自愿买卖的原则，所有用户都可以出售WK币，所有用户均可以购买WK币，买卖交易属于自动结算，交易过程请谨慎交易确认数量和金额，WK币一经售出不退不换。"
+            android:textColor="@color/main_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="详细交易规则如下："
+            android:textColor="@color/main_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:lineSpacingExtra="5dp"
+            android:text="1、交易前请详细了解买/卖家的交易信息。\n\n2、万阔WK币交易大厅用户均可以出售WK币。\n3、会员、店长、合伙人根据级别不同，每天出售的最高WK币限额不同。\n4、所有万阔WK币交易大厅用户均可以购买WK币，购买WK币后可以转换为广告主或服务商使用WK币进行广告投放。\n5、万阔WK币交易大厅用户所得WK币均可抵扣部分现金用于购买万阔商城的产品。\n6、收购WK币者可以发布收购信息（也可以发布多条收购信息），收购完成订单即结束，若收购未完成，发布的收购信息将在48小时后自动下架。\n7、收购WK币者可以通过卖家发布的出售WK币订单直接购买。\n8、双方在万阔WK币交易大厅交易成功，平台收取20%的技术服务费，扣除技术服务费后的剩余金额自动存入出售WK币会员的钱包余额。\n9、卖家发布的出售WK币订单信息可以进行价格修改。\n10、万阔WK币交易大厅用户的充值操作、钱包余额提现操作只能通过本人实名银行卡、支付宝、微信进行。\n11、万阔WK币交易大厅的交易时间为每日00:00-16:30，用户信息发布时间不受限制。\n12、如遇到交易纠纷，请通过“联系我们”来解决问题。\n13、《万阔WK币交易大厅交易规则》的所有处理办法最终解释权在法律规定的范围内归万阔互联网所有。"
+            android:textColor="@color/main_text_color"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+</ScrollView>
+

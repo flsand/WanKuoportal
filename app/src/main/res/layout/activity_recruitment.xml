@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.administrator.wankuoportal.ui.ZhaoPin.RecruitmentDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x42"
+            android:background="@color/colorPrimary"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/x42"
+                android:layout_height="@dimen/x42"
+                android:padding="@dimen/x13"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="招聘详情"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/x13"
+                android:paddingTop="@dimen/x13">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/x3"
+                    android:paddingLeft="@dimen/x16"
+                    android:paddingRight="@dimen/x16"
+                    android:paddingTop="@dimen/x3"
+                    android:text="电话销售-正常班"
+                    android:textColor="@color/all_textc"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/x3"
+                    android:paddingLeft="@dimen/x16"
+                    android:paddingRight="@dimen/x16"
+                    android:paddingTop="@dimen/x3"
+                    android:text="薪资面谈"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/x3"
+                    android:paddingBottom="@dimen/x3"
+                    android:paddingLeft="@dimen/x16"
+                    android:paddingRight="@dimen/x16"
+                    android:paddingTop="@dimen/x3"
+                    android:text="职位：电话销售人员\n地点：山东省 烟台市\n学历：学历不限\n经验：经验不限\n人数：10人" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/x3"
+                    android:paddingLeft="@dimen/x16"
+                    android:paddingRight="@dimen/x16"
+                    android:paddingTop="@dimen/x3"
+                    android:text="职位描述"
+                    android:textColor="@color/all_textc"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/x3"
+                    android:paddingBottom="@dimen/x3"
+                    android:paddingLeft="@dimen/x16"
+                    android:paddingRight="@dimen/x16"
+                    android:paddingTop="@dimen/x3"
+                    android:text="1.岗位职责是岗位描述的一部分。\n2.岗位描述是对岗位的概要、要求、职责、条件等的全盘具体叙述。是规范化的词组，是对工作内容的提炼 岗位描述是对岗位职责的例子吧，比如说：岗位是仓储管理员，岗位职责包括：入库上账管理、出库下账管理、库房安全卫生管理仓储器材管理、不合格品管理、技术资料证件管理等，岗位职责是练的。\n3.岗位描述是一种有效驱动业绩的管理工具，岗位定义是对一个岗位描述一般包括以下六个部分的内容：\na.职位名称和领导汇报关系;\nb.使命与职责;\nc.主要工作\nd.参与、领导或需要完成的主要流程;\ne.关键业绩指标;\nf.技能与经验要求" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/x3"
+                    android:paddingLeft="@dimen/x16"
+                    android:paddingRight="@dimen/x16"
+                    android:paddingTop="@dimen/x3"
+                    android:text="企业描述"
+                    android:textColor="@color/all_textc"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/x3"
+                    android:paddingBottom="@dimen/x3"
+                    android:paddingLeft="@dimen/x16"
+                    android:paddingRight="@dimen/x16"
+                    android:paddingTop="@dimen/x3"
+                    android:text="1.岗位职责是岗位描述的一部分。\n2.岗位描述是对岗位的概要、要求、职责、条件等的全盘具体叙述。是规范化的词组，是对工作内容的提炼 岗位描述是对岗位职责的例子吧，比如说：岗位是仓储管理员，岗位职责包括：入库上账管理、出库下账管理、库房安全卫生管理仓储器材管理、不合格品管理、技术资料证件管理等，岗位职责是练的。" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x5"
+                    android:background="@color/grey" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x40"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="@dimen/x3"
+                    android:paddingLeft="@dimen/x16"
+                    android:paddingRight="@dimen/x16"
+                    android:paddingTop="@dimen/x3"
+                    android:text="推荐职位" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey" />
+
+                <ListView
+                    android:id="@+id/list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey" />
+
+                <LinearLayout
+                    android:id="@+id/more"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x45"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/x3"
+                    android:paddingLeft="@dimen/x16"
+                    android:paddingRight="@dimen/x16"
+                    android:paddingTop="@dimen/x3">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="查看更多"
+                        android:textColor="@color/henhui" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x40"
+                        android:layout_height="@dimen/x40"
+                        android:padding="@dimen/x13"
+                        android:src="@drawable/right" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x60"
+                    android:background="@color/grey" />
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/shenqing"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="申请职位"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/call"
+            android:layout_width="@dimen/x82"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:padding="@dimen/x3"
+                android:src="@drawable/dianhuaff4200" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电话资讯"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

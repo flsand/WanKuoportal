@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.wankuoportal.ui.ZiXunDetialActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/x42"
+            android:padding="@dimen/x13"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="资讯详情"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/share"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/x42"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="分享" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/x13">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/biaoti"
+                android:text="重磅！Uber CEO 宣布无限期休假此前高管层已集体离职"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/x5"
+                android:id="@+id/riqi"
+                android:text="来源：万阔官网 2017-06-14"
+                android:textColor="@color/henhui" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tupian"
+                android:src="@drawable/zxxq002" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/neirong"
+                android:text="据外电报道，Uber首席执行官特拉维斯-卡兰尼克（Travis Kalanick）在周二举行的员工大会中表示，他计划进行休假，且未透露重返公司时间。在卡兰尼克休假期间，陷入一系列丑闻的Uber将由一个管理委员会负责运营。根据一份为公司董事会准备的报告的复印件显示，在卡兰尼克返回Uber时，公司将会剥夺他的一些权力，并任命一位独立的董事会主席来限制他在公司的影响力。
+在周二举行的全员大会中，Uber还向员工传递了美国前总检察长埃里克-霍尔德(Eric Holder)的调查结果。在“性骚扰门”丑闻事件曝光之后，Uber委托霍尔德对公司的性骚扰、歧视和侵略性文化等问题展开独立调查。在霍尔德提供的47项建议中，包括创建一个董事会监督委员会，更改Uber的文化价值观，减少工作活动中的酒精使用，禁止员工与顶头上司之间的亲密关系等等。
+Uber董事会在上周日举行会议，对霍尔德报告的详细版进行了审阅，并投票一致通过了他提供的建议。在此之后，Uber解雇了公司高级业务副总裁埃米尔-米歇尔（Emil Michael）。\n
+待卡兰尼克休假结束重返公司之后，Uber董事会将剥夺他的一些权力，并把这些权力交付给新任命的首席运营官。Uber一直在积极寻觅首席运营官，帮助卡兰尼克管理公司，但此事目前仍未有太大进展。霍尔德在报告中称，“首席运营官将会扮演首席执行官的全职合伙人，他会专注于公司日常运营、企业文化和内部架构等问题。”
+“无论我们得到了什么，我们是如何得到的，最终的责任都停留在我的肩膀上，”卡兰尼克在电子邮件中向员工表示。“为了Uber 2.0能够取得成功，没有什么比奉献我的时间来建立领导团队更为重要。但是如果要打造Uber 2.0，我也需要成为特拉维斯2.0，成为这家公司所需和值得你们信任的领导人。”
+伴随米歇尔在内的一系列高管离职，表明Uber高管任免存在缺陷；外加上悬而未决的性骚扰丑闻调查，以及与Alphabet旗下无人驾驶汽车部门Waymo之间的专利纠纷，这也让卡兰尼克创办的Uber在今年进行首次公开招股的可能性变得微乎其微。\n
+一个又一个丑闻的不断出现，也让Uber损失或开除了许多的管理团队成员。作为一家拥有超过1.4万名员工的巨无霸初创公司，Uber当前缺少一位“二号”任务，能够顶替卡兰尼克管理内部事务。\n
+Uber已开始填补一些高管离职带来的职务空缺。在过去的一周中，哈佛商学院教授弗朗西斯·弗雷（Frances Frei）和苹果前高管博佐马·约翰（Bozoma Saint John）加盟了Uber。前者担任Uber的战略和领导力高级副总裁，后者则将出任首席品牌官。本周一还有消息称，阿里巴巴董事龚万仁（Wan Ling Martello）将会加入Uber董事会，出任公司独立董事。龚万仁具备丰富的员工管理经验。她曾担任沃尔玛全球电商执行副总裁，目前在雀巢担任亚洲、大洋洲和撒哈拉以南非洲的负责人。此外，龚万仁也担任阿里巴巴董事会成员，以及审计委员会成员。
+尽管最近出现了一系列的动荡，但Uber的业务仍处于成长之中。这家公司第一季度的营收达到34亿美元，且净亏损幅度有所收窄，降至7.08亿美元。不过Uber在美国市场的主要竞争对手Lyft抢走了该公司的一些市场份额，且内部冲突可能会给全球竞争对手提供机会，让它们乘机吸引合作伙伴、募集资金或是挖掘人才。
+Uber高管把霍尔德的报告视为他们努力的转折点，希望借此把公司过去的轻率抛在身后，并为公司的未来提供一个线路图。在过去的14周时间中，霍尔德一直在与同事塔米-阿尔巴兰(Tammy Albarran)在Uber内部进行调查。在调查期间，已有超过20人被开除。\n
+Uber董事会成员阿里安娜-赫芬顿(Arianna Huffington)在声明中表示，“调查的时间超出了我们的想象，结果也更为痛苦，但今天将会掀起新的篇章。我们现在任务是学习、重塑，以及共同书写Uber的新篇章。”\n
+Uber的动荡始于今年2月，该公司前软件开发员工苏珊-福勒（Susan Fowler）当时在博客中表示，她在Uber工作期间遭到了主管的性骚扰，但公司人力资源部门却在极力保护主管，而不是积极解决问题。福勒写道：“我很清楚他想与我发生性关系，明显超出常规，我迅速将聊天信息截图，向人力资源部门举报。”Uber高级主管告诉福勒说，这名男子工作表现非常出色，他们不希望因为一个“无辜的错误”而惩罚他。此事件受到业内和市场广泛关注，迫使Uber聘请霍尔德组成调查组来牵头负责调查这场性骚扰丑闻。
+在Uber发布报告之后，福勒发布推文称，“我会继续说下去，直至事情真正改变。”她在上周曾发布推文称，“请记住，这不是关于多样性和包容性，而是关于法律被破坏的问题。骚扰、歧视、报复是非法的。”\n
+在Uber发布的公开报告中，并没有处理福勒的个人诉求。但是该公司董事会批准的变革，将会为Uber提供一条路径，让公司成为对女性和少数民族员工更友好的工作场所。公司拟改变员工的多样性，调整激励良好行为的高管薪酬，建立员工多样性顾问委员会等等。Uber在今年3月首次公布的员工多样性调查报告显示，公司只有15%的女性技术人员。
+在霍尔德对公司现有和前员工的调查中，员工的投诉超出了福勒抱怨的范围，内容涉及到该公司在2014年曾组织一场赴韩国首尔的三陪KTV旅行；滥用“Greyball”工具帮助司机躲避政府监管；以及一宗发生在2014年的印度强奸案处理不当的问题等等。\n
+然而，任何希望该报告能指名道姓或在公司中发现有问题的人都会感到失望。这份报告没有提供这样的细节。\n
+Uber计划进行的若干变革都是象征性的。举例来说，这家公司会把一个名为“作战室”更改为“和平屋”。这家公司还计划放弃许多文化价值观，特别是“让创造者去创造”（“Let Builders Build“）, “永远迅速行动”（”Always Be Hustlin’“），“踩别人脚趾“意为给别人制造麻烦让自己上位（Meritocracy and Toe-Stepping） 等等。
+赫芬顿在声明中表示，“Uber 14条文化价值观中的许多都有良好的用意，但已经被武器化。这是完全不可接受的。”\n
+今年1月加盟Uber的首席人力资源官梁妮-霍恩塞（Liane Hornsey）表示，公司将会进行改革。Uber正着眼于改变人力资源操作惯例，以及员工的日常生活。这其中包括向员工提供更具弹性的时间、获得晋升更为明确地指导方针、修改的绩效审查程序等等。霍恩塞在声明中称，公司希望“确保过去的错误不会重复出现。虽然变化不会在一夜间完成，但我们承诺在员工、司机和乘客中重塑信任。" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

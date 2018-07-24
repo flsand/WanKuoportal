@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="@dimen/x42"
+    android:background="@color/colorPrimary"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView
+        android:id="@+id/bar_iv_back"
+        android:layout_width="@dimen/x42"
+        android:layout_height="@dimen/x42"
+        android:padding="@dimen/x13"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:id="@+id/bar_tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+</RelativeLayout>

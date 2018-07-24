@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.administrator.wankuoportal.ui.DaTi.FenXiangDialogActivity">
+    <LinearLayout
+        android:layout_width="@dimen/x300"
+        android:layout_height="@dimen/x300"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x200"
+            android:padding="@dimen/x5">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/fenxiangtou"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                tools:text="38金币"
+                android:id="@+id/fenxiang_jb"
+                android:textColor="@color/colorAccent"
+                android:textSize="28sp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <ImageView
+                android:layout_width="@dimen/x30"
+                android:layout_height="@dimen/x30"
+                android:src="@drawable/fenxiangclose"
+                android:layout_alignParentTop="true"
+                android:padding="@dimen/x5"
+                android:id="@+id/fenxiang_close"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="亲可以在”有奖答题 - 赢取金币“"
+            android:gravity="center"
+            android:textColor="#ffd864"
+            android:textSize="14sp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="查看金币记录哦！"
+            android:gravity="center"
+            android:paddingTop="@dimen/x5"
+            android:paddingBottom="@dimen/x5"
+            android:textColor="#ffd864"
+            android:textSize="14sp"
+            />
+        <ImageView
+            android:layout_width="@dimen/x130"
+            android:layout_height="@dimen/x40"
+            android:id="@+id/fenxiang_now"
+            android:src="@drawable/fenxiang"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

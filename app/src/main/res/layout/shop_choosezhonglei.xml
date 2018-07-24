@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x22" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x112"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x5">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_kuang_henhui">
+
+                    <ImageView
+                        android:id="@+id/ima_goods"
+                        android:layout_width="@dimen/x120"
+                        android:layout_height="@dimen/x120"
+                        android:padding="@dimen/x5"
+                        android:src="@drawable/dhsc0003" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/price_pop"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_marginLeft="16dp"
+                    android:text="7590"
+                    android:gravity="bottom|left"
+                    android:textColor="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/fenlei_tx"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="top|left"
+                    android:layout_marginTop="10dp"
+                    android:text="选择  分类" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/huise" />
+
+        <LinearLayout
+            android:id="@+id/fenlei_lin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingLeft="@dimen/x13"
+                android:text="颜色分类" />
+
+            <GridView
+                android:id="@+id/grid"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x100"
+                android:background="@color/white"
+                android:horizontalSpacing="3dp"
+                android:numColumns="3"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:scrollbars="none"
+                android:verticalSpacing="3dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/henhui" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x65"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="购买数量" />
+
+            <ImageView
+                android:id="@+id/jian"
+                android:layout_width="@dimen/x31"
+                android:layout_height="@dimen/x31"
+                android:background="@drawable/jian" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/x31"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/num"
+                android:layout_width="@dimen/x31"
+                android:layout_height="@dimen/x31"
+                android:background="@color/grey"
+                android:gravity="center"
+                android:text="1" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/x31"
+                android:background="@color/white" />
+
+            <ImageView
+                android:id="@+id/jia"
+                android:layout_width="@dimen/x31"
+                android:layout_height="@dimen/x31"
+                android:background="@drawable/j" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/henhui" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x30"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/ok_order"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x44"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="@dimen/x40"
+        android:layout_height="@dimen/x40"
+        android:layout_gravity="right"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="16dp"
+        android:padding="10dp"
+        android:src="@drawable/cha" />
+
+
+</RelativeLayout>

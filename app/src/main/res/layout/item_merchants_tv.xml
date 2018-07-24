@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="3dp">
+
+    <TextView
+        android:id="@+id/item_name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:maxLines="2"
+        android:layout_gravity="center"
+        android:text="名称"
+        android:textSize="12sp" />
+
+    <View
+        android:id="@+id/item_line_tv"
+        android:layout_width="1dp"
+        android:layout_height="10dp"
+        android:layout_gravity="center"
+        android:background="@color/text_orange" />
+
+</LinearLayout>

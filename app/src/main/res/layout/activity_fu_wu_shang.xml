@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.wankuoportal.ui.download.GuangGaoZhuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/x42"
+            android:padding="@dimen/x13"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我是服务商"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x350"
+        android:src="@drawable/fws" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x13"
+        android:paddingRight="@dimen/x13"
+        android:text="服务商：商务服务、生活服务、技术开发、营销推广服务免费入驻开店赚钱，功能模式，签保、投标、派单、雇佣、直接购买。免费招聘、让有需求的客户主动找上门。"
+        android:textColor="@color/colorPrimary" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x13">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x42"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_login"
+            android:gravity="center"
+            android:text="商家端下载"
+            android:textColor="@color/huise" />
+    </RelativeLayout>
+
+</LinearLayout>

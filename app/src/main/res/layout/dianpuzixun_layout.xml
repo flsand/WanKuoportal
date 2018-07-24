@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:padding="@dimen/x13">
+
+    <ImageView
+        android:id="@+id/ima"
+        android:layout_width="@dimen/x95"
+        android:layout_height="@dimen/x95"
+        android:adjustViewBounds="true"
+        android:src="@drawable/chuanpu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/x8">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="留给印度的“纠错”时间还有多少?"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:minLines="3"
+            android:paddingTop="@dimen/x5"
+            tools:text="演习第二阶段将举行。看法新闻记者已于9月13日随编队起航，目      标是濒临日本海的符拉迪沃斯托克，全程采访，为您带来新鲜的一手信息。值得注意的是，在中国参加演习的舰艇方面，与第一阶" />
+
+        <TextView
+            android:id="@+id/end"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/x5"
+            tools:text="来源：万阔平台 浏览量：15220"
+            android:textColor="@color/henhui" />
+
+    </LinearLayout>
+
+</LinearLayout>

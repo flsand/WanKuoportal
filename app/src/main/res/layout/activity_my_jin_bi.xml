@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.wankuoportal.ui.HuiYuanWoDe.MyJinBiActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/x42"
+            android:padding="@dimen/x13"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/information_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="我的资产"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x50"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:textSize="@dimen/font_medium"
+                android:text="@string/tradable"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/tixianjb"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x80"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:text="暂无收益"
+                android:textColor="@color/white"
+                android:textSize="36sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x60"
+                android:background="#ff6833"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/mytuijian"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="@dimen/font_medium"
+                        android:text="我的推荐"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/mannum"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="@dimen/font_medium"
+                        android:text="0人"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textSize="@dimen/font_medium"
+                        android:text="普通金币"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/putongjb"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/font_medium"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:textSize="@dimen/font_medium"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="WK币"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/datijb"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/font_medium"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/font_medium"
+                        android:gravity="center"
+                        android:text="广告金币"
+                        android:textColor="@color/white" />
+
+                    <TextView
+                        android:id="@+id/rechargeGoldTv"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/font_medium"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/white" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x55"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/x13">
+
+                <ImageView
+                    android:layout_width="@dimen/x27"
+                    android:layout_height="@dimen/x27"
+                    android:src="@drawable/jinbiwode" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/x5"
+                    android:textSize="@dimen/font_medium"
+                    android:text="总金币" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/x13">
+
+                <TextView
+                    android:id="@+id/zongjb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/x5"
+                    android:text="0"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/jb_detail"
+                    android:layout_width="@dimen/x71"
+                    android:layout_height="@dimen/x25"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/fensebiankuang"
+                    android:textSize="@dimen/font_medium"
+                    android:gravity="center"
+                    android:text="明细"
+                    android:textColor="#ff7f8c" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x5"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x55"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/x13">
+
+                <ImageView
+                    android:layout_width="@dimen/x27"
+                    android:layout_height="@dimen/x27"
+                    android:src="@drawable/duihuanwode" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/x5"
+                    android:textSize="@dimen/font_medium"
+                    android:text="@string/tradable" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/x13">
+
+                <TextView
+                    android:id="@+id/keduihuanjb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/x5"
+                    android:text="0"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/jb_duihaun"
+                    android:layout_width="@dimen/x71"
+                    android:layout_height="@dimen/x25"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/huangsebiankuang"
+                    android:gravity="center"
+                    android:text="交易"
+                    android:textColor="#ff4200"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x5"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x55"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/x13">
+
+                <ImageView
+                    android:layout_width="@dimen/x27"
+                    android:layout_height="@dimen/x27"
+                    android:src="@drawable/jinbiwode" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/x5"
+                    android:textSize="@dimen/font_medium"
+                    android:text="购物钻石" />
+
+                <TextView
+                    android:id="@+id/zuanshi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:text="0"
+                    android:textColor="@color/red"
+                    android:textSize="12sp" />
+            </LinearLayout>
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/x55"-->
+            <!--android:background="@color/white"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="@dimen/x13">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="@dimen/x27"-->
+            <!--android:layout_height="@dimen/x27"-->
+            <!--android:src="@drawable/duihuanshangchengwode" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:padding="@dimen/x5"-->
+            <!--android:text="金币商城" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/shop_go"-->
+            <!--android:layout_width="@dimen/x71"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:background="@drawable/lansebiankuang"-->
+            <!--android:gravity="center"-->
+            <!--android:text="进入"-->
+            <!--android:textColor="#659afd" />-->
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/x5"-->
+            <!--android:background="@color/grey" />-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/x55"-->
+            <!--android:background="@color/white"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="@dimen/x13">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="@dimen/x27"-->
+            <!--android:layout_height="@dimen/x27"-->
+            <!--android:src="@drawable/mine_asset_store" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:padding="@dimen/x5"-->
+            <!--android:text="我的万店" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/wandian_go"-->
+            <!--android:layout_width="@dimen/x71"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:background="@drawable/lansebiankuang"-->
+            <!--android:gravity="center"-->
+            <!--android:text="进入"-->
+            <!--android:textColor="#659afd" />-->
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/x5"-->
+            <!--android:background="@color/grey" />-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/x55"-->
+            <!--android:background="@color/white"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:padding="@dimen/x13">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="@dimen/x27"-->
+            <!--android:layout_height="@dimen/x27"-->
+            <!--android:src="@drawable/mine_asset_team" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_weight="1"-->
+            <!--android:padding="@dimen/x5"-->
+            <!--android:text="我的团队" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_my_jinbi_team"-->
+            <!--android:layout_width="@dimen/x71"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:background="@drawable/lansebiankuang"-->
+            <!--android:gravity="center"-->
+            <!--android:text="进入"-->
+            <!--android:textColor="#659afd" />-->
+            <!--</LinearLayout>-->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

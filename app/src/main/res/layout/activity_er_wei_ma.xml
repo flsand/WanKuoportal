@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fx0505"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.wankuoportal.ui.HuiYuanWoDe.ErWeiMaActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/x42"
+            android:padding="@dimen/x13"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="全球首发,闲赚赚钱!"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+    <!--<ScrollView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--<ImageView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="@dimen/x250"-->
+    <!--android:scaleType="fitXY"-->
+    <!--android:src="@drawable/erweima_tou" />-->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x10"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/denglu"
+        android:layout_width="@dimen/x63"
+        android:layout_height="@dimen/x63"
+        android:layout_gravity="center"
+        android:src="@drawable/tou" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/x5"
+        android:lineSpacingExtra="@dimen/x3"
+        android:text="我是胡说\n我在万阔平台赚了500000金币"
+        android:textColor="@color/all_textc" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="送您一个现金红包"
+        android:textColor="@color/white"
+        android:paddingBottom="@dimen/x5"
+        android:paddingLeft="@dimen/x13"
+        android:paddingRight="@dimen/x13"
+        android:paddingTop="@dimen/x5"
+        android:textSize="18sp"
+        android:background="@drawable/bg_red"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x3"
+        android:textSize="16sp"
+        android:text="快来万阔和我一起赚大钱吧~"/>
+
+    <RelativeLayout
+        android:id="@+id/savePictureLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/x10"
+            android:paddingBottom="@dimen/x25"
+            android:paddingLeft="@dimen/x40"
+            android:paddingRight="@dimen/x40"
+            >
+
+            <ImageView
+                android:id="@+id/erweimabg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_centerInParent="true"
+                android:background="@drawable/hongbao" />
+
+            <ImageView
+                android:id="@+id/erweima"
+                android:layout_width="@dimen/x100"
+                android:layout_height="@dimen/x100"
+                android:adjustViewBounds="true"
+                android:background="@color/colorPrimary"
+                android:src="@drawable/ewm"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/x130" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/erweima"
+                android:layout_marginTop="@dimen/x20"
+                android:gravity="center"
+                android:padding="@dimen/x5"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:text="长按识别二维码,立即开始赚钱" />
+
+        </RelativeLayout>
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:orientation="vertical">-->
+
+
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:adjustViewBounds="true"-->
+                <!--android:src="@drawable/erweima_di" />-->
+        <!--</LinearLayout>-->
+
+    </RelativeLayout>
+
+
+    <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+</LinearLayout>

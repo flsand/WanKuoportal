@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/jyltz"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.wankuoportal.ui.DaTi.MemoryAnswerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/wen_back"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/x42"
+            android:padding="@dimen/x13"
+            android:src="@drawable/black_back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="记忆答案"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x70"
+                android:orientation="horizontal"
+                android:paddingBottom="13dp"
+                android:paddingTop="13dp">
+
+                <TextView
+                    android:id="@+id/jy_manposition"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="您是第20个记忆此题的" />
+
+                <TextView
+                    android:id="@+id/djs_jy"
+                    android:layout_width="@dimen/x40"
+                    android:layout_height="@dimen/x40"
+                    android:layout_gravity="center"
+                    android:background="@drawable/jydjs"
+                    android:gravity="center"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|right"
+                        android:text="您已看到" />
+
+                    <TextView
+                        android:id="@+id/jy_quessitionposition"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="/10" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/jy_qst_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/x13"
+                android:paddingTop="@dimen/x13"
+                android:lineSpacingExtra="@dimen/x3"
+                tools:text="万阔团队中拥有着来自Google，腾讯、百度、58同城、360、DENA等全球顶级互联网公司的技术精英。他们对互联网产业的深刻理解对用户需求的敏锐洞察，对未来趋势的智慧视角，让万阔产品以无缝的多屏体验和卓越技术水平著称。" />
+
+            <TextView
+                android:id="@+id/jy_qst_qst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/x13"
+                android:paddingTop="@dimen/x13"
+                tools:text="万阔团队技术精英都来自哪里您知道吗？"
+                android:textColor="@color/colorPrimary" />
+
+            <ImageView
+                android:id="@+id/jy_qst_ima"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x150"
+                android:src="@drawable/dati_guangao" />
+
+            <TextView
+                android:id="@+id/jy_qst_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/x13"
+                android:paddingTop="@dimen/x13"
+                tools:text="答案：是来自Google，腾讯、百度、58同城、DEAD360等全球顶级互联网公司" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/x15">
+
+                <ImageView
+                    android:layout_width="@dimen/x17"
+                    android:layout_height="@dimen/x17"
+                    android:src="@drawable/jyda" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/x5"
+                    android:text="温馨提示：请牢记此题的问题和答案,回答正确赚金币赢大奖"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/x13">
+
+                <TextView
+                    android:id="@+id/jy_next"
+                    android:layout_width="@dimen/x215"
+                    android:layout_height="@dimen/x30"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/bg_shenfen"
+                    android:gravity="center"
+                    android:text="下一题"
+                    android:textColor="@color/white" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/transaction_contain_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/manor_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/grey_bg"
+        android:orientation="horizontal">
+
+        <com.flysand.mylibrary.customView.DrawableCenterRadioButton
+            android:id="@+id/manor_home_rb"
+            style="@style/Transaction_RadioButton"
+            android:drawableTop="@drawable/hanor_home_bg"
+            android:text="首页" />
+
+        <com.flysand.mylibrary.customView.DrawableCenterRadioButton
+            android:id="@+id/manor_find_rb"
+            style="@style/Transaction_RadioButton"
+            android:drawableTop="@drawable/hanor_find_bg"
+            android:text="发现" />
+
+        <com.flysand.mylibrary.customView.DrawableCenterRadioButton
+            android:id="@+id/manor_record_rb"
+            style="@style/Transaction_RadioButton"
+            android:drawableTop="@drawable/hanor_record_bg"
+            android:text="记录" />
+
+        <com.flysand.mylibrary.customView.DrawableCenterRadioButton
+            android:id="@+id/manor_my_rb"
+            style="@style/Transaction_RadioButton"
+            android:drawableTop="@drawable/hanor_my_bg"
+            android:text="我的"/>
+
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.wankuoportal.ui.denglu.ManDetailActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/x42"
+            android:padding="@dimen/x13"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="人才详情"
+            android:textColor="@color/white"
+            android:id="@+id/title"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/x13">
+
+
+                <ImageView
+                    android:layout_width="@dimen/x100"
+                    android:layout_height="@dimen/x100"
+                    android:src="@drawable/zhengzhuang" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/x5"
+                    android:text="范晓萱"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/x5"
+                    android:text="女|24岁|应届生|本科"
+                    android:textColor="@color/henhui"
+                    android:textSize="15sp" />
+
+                <!--<com.example.administrator.wankuoportal.util.HorizontalListViewlListView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="@dimen/x20"-->
+                    <!--android:paddingTop="5dp"></com.example.administrator.wankuoportal.util.HorizontalListViewlListView>-->
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/x5"
+                    android:text="期望职位：电话销售人员"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/x5"
+                    android:text="期望地点：山东省 烟台市"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/x5"
+                    android:text="期望薪资：面谈"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/x5"
+                    android:text="教育情况"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/x5"
+                    android:text="2007.09 - 2011.06 烟台南山学院 国际经济与贸易 本科"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="工作情况"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/x5"
+                    android:text="2014.02 - 2016.10  北京知品堂商贸有限公司  （2年8个月）
+店长助理 | 2001-4000元/月
+快速消费品（食品/饮料/烟酒/日化） | 企业性质：民营
+工作描述：	主要负责商品的摆放整理、宣传和推广销售，协助店
+长接待来访客户，以及日常办公事务处理。
+2013.05 - 2013.12  北京乐动卓越科技有限公司  （7个月）
+客户服务专员/助理 | 2001-4000元/月
+网络游戏 | 企业性质：股份制企业
+工作描述：	1、通过邮件和工单的形式帮助玩家解决相关问题。
+2、负责游戏软件的更新并测试。3、负责游戏产品问题
+的收集、反馈工作。
+2012.04 - 2013.03  烟台飞鸢综合经营服务公司  （11个月）
+统计兼人事 | 1000-2000元/月
+零售/批发 | 企业性质：民营
+工作描述：	统计员工薪资，统计日常消费和员工的工作量，办理
+员工的入职和离职手续，以及办公室日常事务的处理。 "
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x5"
+                android:background="@color/grey" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x34"
+                android:gravity="center_vertical"
+                android:text="推荐人才" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <ListView
+                android:id="@+id/man_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x45"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="查看更多"
+                    android:textColor="@color/henhui" />
+
+                <ImageView
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:padding="@dimen/x3"
+                    android:src="@drawable/right" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x10"
+                android:background="@color/grey" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="邀请面试"
+            android:id="@+id/yaoqingmianshi"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="@dimen/x83"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:id="@+id/callphone"
+            android:paddingBottom="@dimen/x3">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:padding="@dimen/x3"
+                android:src="@drawable/dianhuaff4200" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="联系电话"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

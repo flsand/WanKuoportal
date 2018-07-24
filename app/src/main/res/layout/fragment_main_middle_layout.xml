@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="285dp"
+    android:background="@color/grey"
+    android:paddingTop="5dp">
+
+    <LinearLayout
+        android:id="@+id/advertisers_layout"
+        android:layout_width="280dp"
+        android:layout_height="90dp"
+        android:onClick="onClick"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/employers_layout"
+        android:layout_toStartOf="@+id/employers_layout"
+        android:background="@drawable/bg_grey_shangxia"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="18dp"
+                android:text="我是广告主"
+                android:textColor="@color/main_text_color"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:paddingTop="18dp"
+                android:text="精准广告投放；提升企业、品牌、曝光度、知名度以及销售业绩"
+                android:textColor="@color/main_text_color"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:src="@drawable/guanggaozhu" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/negoziante_layout"
+        android:layout_width="185dp"
+        android:layout_height="95dp"
+        android:onClick="onClick"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/bg_grey_zuo"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="18dp"
+                android:text="我是店长"
+                android:textColor="@color/main_text_color"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:paddingTop="18dp"
+                android:text="享有购物折扣，每日红包分红，多项佣金受益"
+                android:textColor="@color/main_text_color"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:padding="3dp"
+            android:src="@drawable/meitizhu" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/facilitator_layout"
+        android:layout_width="280dp"
+        android:layout_height="95dp"
+        android:onClick="onClick"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/member_layout"
+        android:layout_toRightOf="@+id/member_layout"
+        android:background="@drawable/bg_grey_shangxiazuo"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="18dp"
+                android:text="我是服务商"
+                android:textColor="@color/all_textc"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:paddingTop="18dp"
+                android:text="免费开店赚钱；接单、投标、抢单、购买雇佣优质订单等你来赚"
+                android:textColor="@color/main_text_color"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.31"
+            android:padding="3dp"
+            android:src="@drawable/fuwushang" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/employers_layout"
+        android:layout_width="95dp"
+        android:layout_height="170dp"
+        android:layout_above="@+id/facilitator_layout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:onClick="onClick"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/negoziante_layout"
+        android:layout_toRightOf="@+id/negoziante_layout"
+        android:background="@drawable/bg_grey"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/guzhu_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="18dp"
+                android:text="我是雇主"
+                android:textColor="@color/main_text_color"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/guzhu_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:paddingTop="18dp"
+                android:text="发需求找人帮忙,帮我送、取、买"
+                android:textColor="@color/main_text_color"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:src="@drawable/guzhu" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/member_layout"
+        android:layout_width="95dp"
+        android:layout_height="170dp"
+        android:onClick="onClick"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/negoziante_layout"
+        android:layout_toLeftOf="@+id/negoziante_layout"
+        android:layout_toStartOf="@+id/negoziante_layout"
+        android:background="@drawable/bg_grey_none"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="18dp"
+                android:text="我是会员"
+                android:textColor="@color/main_text_color"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="8dp"
+                android:paddingTop="18dp"
+                android:text="免费求职征婚、记忆猜题赢大奖"
+                android:textColor="@color/main_text_color"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:src="@drawable/huiyuan" />
+    </LinearLayout>
+
+</RelativeLayout>

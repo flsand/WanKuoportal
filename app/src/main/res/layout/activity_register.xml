@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroud_color"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.wankuoportal.ui.denglu.RegisterActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/x42"
+            android:padding="@dimen/x13"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="注册"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/shenfen_lin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:paddingTop="@dimen/x10">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/huiyuan_zhuce"
+            android:layout_width="@dimen/x90"
+            android:layout_height="@dimen/x30"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_shenfen_none"
+            android:gravity="center"
+            android:text="普通会员" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/guzhu_zhuce"
+            android:layout_width="@dimen/x90"
+            android:layout_height="@dimen/x30"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_shenfen_none"
+            android:gravity="center"
+            android:text="雇主" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/detiles_zhuce"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x70"
+        android:padding="@dimen/x15"
+        android:textColor="@color/colorPrimary" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/x13">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="@dimen/x55"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="手机号"
+            android:textColor="@color/all_textc"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/phone_zhuce"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="0123456789"
+            android:hint="请输入手机号"
+            android:inputType="number"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="16dp"
+            android:visibility="gone"
+            android:id="@+id/shoujinum"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/getcode_zhuce"
+            android:layout_width="wrap_content"
+            android:minWidth="80dp"
+            android:layout_height="match_parent"
+            android:background="@color/grey"
+            android:gravity="center"
+            android:padding="@dimen/x5"
+            android:text="获取验证码"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:padding="@dimen/x13">
+
+        <TextView
+            android:layout_width="@dimen/x55"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="验证码"
+            android:textColor="@color/all_textc"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/code_zhuce"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:digits="0123456789"
+            android:hint="请输入验证码"
+            android:inputType="number"
+            android:layout_marginLeft="15dp"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/x12"
+        android:paddingRight="@dimen/x12"
+        android:paddingTop="@dimen/x15">
+
+        <Button
+            android:id="@+id/bt_zhuce"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x50"
+            android:background="@drawable/bg_login"
+            android:text="下一步"
+            android:textColor="#ffb1a3"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,1207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/base_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x66"
+        android:background="?attr/colorPrimary"
+        android:paddingRight="16dp"
+        android:paddingTop="@dimen/x24"
+        android:theme="@style/ToolbarPopupTheme">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="商家分类"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:gravity="center"/>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/x5"
+                android:paddingLeft="@dimen/x16"
+                android:paddingRight="@dimen/x16"
+                android:paddingTop="@dimen/x5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/yuanxingjujiao"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/x3"
+                    android:paddingTop="@dimen/x3">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="@dimen/x10"
+                            android:text="服务"
+                            android:textColor="@color/henhui" />
+
+                        <ImageView
+                            android:layout_width="@dimen/x20"
+                            android:layout_height="@dimen/x20"
+                            android:padding="@dimen/x3"
+                            android:src="@drawable/ss"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/editview"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="center_vertical"
+                        android:hint="请输入服务或产品关键词"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/x10"
+                        android:textColor="@color/all_textc"
+                        android:textColorHint="@color/henhui"
+                        android:textSize="13sp" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x20"
+                        android:layout_height="@dimen/x20"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/yuyin"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/yiji_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_xia"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/yiji_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_xia"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/yiji_3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_xia"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/yiji_4"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_xia"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/yiji_5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_xia"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/yiji_6"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_xia"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/yiji_7"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_xia"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/yiji_8"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_xia"
+                android:gravity="center" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey" />
+
+            <TextView
+                android:id="@+id/yiji_9"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_grey_xia"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:id="@+id/scrollview"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@color/grey">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/x15"
+                android:paddingRight="@dimen/x15">
+                //二级分类第一行
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x100"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/two_1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two1_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two1_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/two_2"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two2_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two2_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/two_3"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two3_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two3_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                // 三级分类第一行
+
+                <LinearLayout
+                    android:id="@+id/three_lin1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:visibility="gone">
+
+                    <GridView
+                        android:id="@+id/grid1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:numColumns="3" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp">
+
+                        <TextView
+                            android:id="@+id/shouqi_1"
+                            android:layout_width="@dimen/x50"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_kuang"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="收起"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                //二级分类第二行
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x100"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/two_4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two4_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two4_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/two_5"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two5_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two5_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/two_6"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two6_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two6_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                // 三级分类第二行
+
+                <LinearLayout
+                    android:id="@+id/three_lin2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:visibility="gone">
+
+                    <GridView
+                        android:id="@+id/grid2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:numColumns="3" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp">
+
+                        <TextView
+                            android:id="@+id/shouqi_2"
+                            android:layout_width="@dimen/x50"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_kuang"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="收起"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                //二级分类第三行
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x100"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/two_7"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two7_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two7_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/two_8"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two8_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two8_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/two_9"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two9_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two9_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                // 三级分类第三行
+
+                <LinearLayout
+                    android:id="@+id/three_lin3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:visibility="gone">
+
+                    <GridView
+                        android:id="@+id/grid3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:numColumns="3" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp">
+
+                        <TextView
+                            android:id="@+id/shouqi_3"
+                            android:layout_width="@dimen/x50"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_kuang"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="收起"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                //二级分类第四行
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x100"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/two_10"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two10_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two10_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/two_11"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two11_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two11_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/two_12"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two12_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two12_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                // 三级分类第四行
+
+                <LinearLayout
+                    android:id="@+id/three_lin4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:visibility="gone">
+
+                    <GridView
+                        android:id="@+id/grid4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:numColumns="3" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="3dp">
+
+                        <TextView
+                            android:id="@+id/shouqi_4"
+                            android:layout_width="@dimen/x50"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_kuang"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="收起"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                //二级分类第五行
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x100"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/two_13"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two13_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two13_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/two_14"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two14_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two14_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/two_15"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two15_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two15_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                // 三级分类第五行
+
+                <LinearLayout
+                    android:id="@+id/three_lin5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/x8"
+                    android:paddingRight="@dimen/x8"
+                    android:visibility="gone">
+
+                    <GridView
+                        android:id="@+id/grid5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:numColumns="3" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/x3">
+
+                        <TextView
+                            android:id="@+id/shouqi_5"
+                            android:layout_width="@dimen/x50"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_kuang"
+                            android:gravity="center"
+                            android:padding="@dimen/x3"
+                            android:text="收起"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                //二级分类第六行
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x100"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/two_16"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two16_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two16_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/two_17"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two17_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two17_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/two_18"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two18_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two18_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                // 三级分类第六行
+
+                <LinearLayout
+                    android:id="@+id/three_lin6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/x8"
+                    android:paddingRight="@dimen/x8"
+                    android:visibility="gone">
+
+                    <GridView
+                        android:id="@+id/grid6"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:numColumns="3" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/x3">
+
+                        <TextView
+                            android:id="@+id/shouqi_6"
+                            android:layout_width="@dimen/x50"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_kuang"
+                            android:gravity="center"
+                            android:padding="@dimen/x3"
+                            android:text="收起"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                //二级分类第七行
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x100"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/two_19"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two19_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two19_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/two_20"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two20_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two20_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/two_21"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two21_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two21_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                // 三级分类第七行
+
+                <LinearLayout
+                    android:id="@+id/three_lin7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/x8"
+                    android:paddingRight="@dimen/x8"
+                    android:visibility="gone">
+
+                    <GridView
+                        android:id="@+id/grid7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:numColumns="3" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/x3">
+
+                        <TextView
+                            android:id="@+id/shouqi_7"
+                            android:layout_width="@dimen/x50"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_kuang"
+                            android:gravity="center"
+                            android:padding="@dimen/x3"
+                            android:text="收起"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                //二级分类第八行
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x100"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/two_22"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/tw22_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two22_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/two_23"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two23_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two23_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/two_24"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/two24_ima"
+                            android:layout_width="@dimen/x60"
+                            android:layout_height="@dimen/x60"
+                            android:paddingTop="@dimen/x15"
+                            android:src="@drawable/di" />
+
+                        <TextView
+                            android:id="@+id/two24_tx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="@dimen/x5"
+                            android:text="企业服务" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                // 三级分类第八行
+
+                <LinearLayout
+                    android:id="@+id/three_lin8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/x8"
+                    android:paddingRight="@dimen/x8"
+                    android:visibility="gone">
+
+                    <GridView
+                        android:id="@+id/grid8"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:numColumns="3"
+                        android:scrollbars="none"
+                        android:verticalSpacing="1dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/x3">
+
+                        <TextView
+                            android:id="@+id/shouqi_8"
+                            android:layout_width="@dimen/x50"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_kuang"
+                            android:gravity="center"
+                            android:padding="@dimen/x3"
+                            android:text="收起"
+                            android:textColor="@color/colorPrimary" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x50" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</LinearLayout>

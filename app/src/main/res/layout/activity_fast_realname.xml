@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.wankuoportal.ui.HuiYuanWoDe.FastRealnameActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/x42"
+            android:padding="@dimen/x13"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/information_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="快速实名认证"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x37"
+        android:paddingLeft="@dimen/x13"
+        android:textColor="@color/henhui"
+        android:gravity="center_vertical"
+        android:text="请务必填写本人二代身份证信息"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/x13"
+        android:paddingTop="@dimen/x13"
+        style="@style/LinearLayoutStyles"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x62"
+            android:layout_height="wrap_content"
+            android:text="真实姓名"
+            android:gravity="center"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/x5"
+            android:background="@null"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/x13"
+        android:paddingTop="@dimen/x13"
+        style="@style/LinearLayoutStyles"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x62"
+            android:layout_height="wrap_content"
+            android:text="身份证号"
+            android:gravity="center"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/x5"
+            android:background="@null"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/x13"
+        android:paddingTop="@dimen/x13"
+        style="@style/LinearLayoutStyles"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/x62"
+            android:layout_height="wrap_content"
+            android:text="手机号码"
+            android:gravity="center"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/x5"
+            android:background="@null"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/x13"
+        android:paddingTop="@dimen/x13"
+        style="@style/LinearLayoutStyles"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/x5"
+            android:hint="请输入验证码"
+            android:textSize="15sp"
+            android:background="@null"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送验证码"
+            android:padding="@dimen/x3"
+            android:background="@color/edittext"
+            android:textColor="@color/white"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/x13">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x42"
+            android:layout_centerInParent="true"
+            android:text="马上验证"
+            android:textColor="@color/huise"
+            android:background="@drawable/bg_login"
+            android:gravity="center"/>
+    </RelativeLayout>
+</LinearLayout>

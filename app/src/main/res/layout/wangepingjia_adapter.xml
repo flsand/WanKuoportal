@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+万哥评价adapter item
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/LinearLayoutStyles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/x10">
+
+
+        <ImageView
+            android:id="@+id/ima"
+            android:layout_width="@dimen/x43"
+            android:layout_height="@dimen/x43"
+            android:layout_gravity="start"
+            android:src="@drawable/touxiang" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+            android:paddingLeft="@dimen/x5">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/x3"
+                android:text="eww52" />
+
+
+            <TextView
+                android:id="@+id/pingjia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/x3"
+                android:text="eww52" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:paddingTop="@dimen/x3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="服务打分：" />
+
+                <ImageView
+                    android:id="@+id/xing1"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:padding="@dimen/x5"
+                    android:src="@drawable/huangxing" />
+
+                <ImageView
+                    android:id="@+id/xing2"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:padding="@dimen/x5"
+                    android:src="@drawable/huangxing" />
+
+                <ImageView
+                    android:id="@+id/xing3"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:padding="@dimen/x5"
+                    android:src="@drawable/huangxing" />
+
+                <ImageView
+                    android:id="@+id/xing4"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:padding="@dimen/x5"
+                    android:src="@drawable/huangxing" />
+
+                <ImageView
+                    android:id="@+id/xing5"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:padding="@dimen/x5"
+                    android:src="@drawable/huixing" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="2017-08-31"
+            android:textColor="@color/henhui" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinearLayoutStyles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/x10">
+
+
+        <ImageView
+            android:id="@+id/ima1"
+            android:layout_width="@dimen/x43"
+            android:layout_height="@dimen/x43"
+            android:layout_gravity="start"
+            android:src="@drawable/touxiang" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:id="@+id/xing_lin"
+            android:paddingLeft="@dimen/x5">
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/x3"
+                android:text="eww52" />
+
+
+
+            <TextView
+                android:id="@+id/pingjia1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/x3"
+                android:text="eww52" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/x3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="服务打分：" />
+
+                <ImageView
+                    android:id="@+id/xing11"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:padding="@dimen/x5"
+                    android:src="@drawable/huangxing" />
+
+                <ImageView
+                    android:id="@+id/xing21"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:padding="@dimen/x5"
+                    android:src="@drawable/huangxing" />
+
+                <ImageView
+                    android:id="@+id/xing31"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:padding="@dimen/x5"
+                    android:src="@drawable/huangxing" />
+
+                <ImageView
+                    android:id="@+id/xing41"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:padding="@dimen/x5"
+                    android:src="@drawable/huangxing" />
+
+                <ImageView
+                    android:id="@+id/xing51"
+                    android:layout_width="@dimen/x20"
+                    android:layout_height="@dimen/x20"
+                    android:padding="@dimen/x5"
+                    android:src="@drawable/huixing" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="2017-08-31"
+            android:textColor="@color/henhui" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x5"
+        android:background="@color/grey"/>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="today">今天</string>
+    <string name="yesterday">昨天</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="last_year">去年</string>
+
+    <string name="my_info_title">我的消息</string>
+    <string name="my_info_title_num">我的消息(<xliff:g>%d</xliff:g>)</string>
+    <string name="my_info_detail_title">我的消息</string>
+    <string name="my_info_date_just_now">刚刚</string>
+    <string name="my_info_date_minutes"><xliff:g>%d</xliff:g>分钟前</string>
+    <string name="my_info_date_hours"><xliff:g>%d</xliff:g>小时前</string>
+    <string name="my_info_next">下一条</string>
+    <string name="my_info_last">上一条</string>
+    <string name="my_info_no_more_info">没有信息了</string>
+
+    <string name="shouye_kaidian_title">开店接单赚钱</string>
+    <string name="shouye_guanggaozhu_title">我是广告主</string>
+
+    <string name="my_team_refresh">""</string>
+</resources>

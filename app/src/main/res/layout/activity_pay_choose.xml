@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.wankuoportal.ui.Pay.PayChooseActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/x42"
+            android:padding="@dimen/x13"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/information_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="支付"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/LinearLayoutStyles"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="订单金额" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="263.00元"
+            android:id="@+id/pay_money"
+            android:textColor="@color/colorPrimary" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        style="@style/LinearLayoutStyles"
+        android:layout_width="match_parent"
+        android:id="@+id/pay_yinhang"
+        android:visibility="gone"
+        android:layout_height="@dimen/x57"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x36"
+            android:layout_height="@dimen/x36"
+            android:src="@drawable/yinhangkazhifu"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="银行卡支付" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/henhui"
+                android:gravity="center_vertical"
+                android:text="银行卡安全支付" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/x20"
+            android:layout_height="@dimen/x20"
+            android:padding="@dimen/x3"
+            android:src="@drawable/right"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <LinearLayout
+        style="@style/LinearLayoutStyles"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x57"
+        android:id="@+id/pay_wx"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x36"
+            android:layout_height="@dimen/x36"
+            android:src="@drawable/weixinzhifu"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|bottom"
+                android:text="微信支付" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/henhui"
+                android:gravity="left|top"
+                android:text="微信安全支付" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/x20"
+            android:layout_height="@dimen/x20"
+            android:padding="@dimen/x3"
+            android:src="@drawable/right"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <LinearLayout
+        style="@style/LinearLayoutStyles"
+        android:layout_width="match_parent"
+        android:id="@+id/pay_zfb"
+        android:layout_height="@dimen/x57"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x36"
+            android:layout_height="@dimen/x36"
+            android:src="@drawable/zhifubaozhifu"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|bottom"
+                android:text="支付宝支付" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:textColor="@color/henhui"
+                android:gravity="left|top"
+                android:text="支付宝安全支付" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/x20"
+            android:layout_height="@dimen/x20"
+            android:padding="@dimen/x3"
+            android:src="@drawable/right"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <LinearLayout
+        style="@style/LinearLayoutStyles"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x57"
+        android:id="@+id/pay_qianbao"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x36"
+            android:layout_height="@dimen/x36"
+            android:src="@mipmap/ic_qianbao"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|bottom"
+                android:text="钱包支付" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="14sp"
+                android:gravity="left|top"
+                android:textColor="@color/henhui"
+                android:text="钱包支付方便快捷" />
+        </LinearLayout>
+        <ImageView
+            android:layout_width="@dimen/x20"
+            android:layout_height="@dimen/x20"
+            android:padding="@dimen/x3"
+            android:src="@drawable/right"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+</LinearLayout>

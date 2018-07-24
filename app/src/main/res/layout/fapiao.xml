@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/x13"
+        android:paddingTop="@dimen/x13">
+
+
+        <LinearLayout
+            android:id="@+id/kaipiaofang"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开票方"
+                android:id="@+id/tv_kaipiaofang"
+                android:textColor="@color/henhui" />
+
+            <ImageView
+                android:id="@+id/kaipiaofang_ima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x3"
+                android:src="@drawable/sanjiao" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shenqingzhuangtai"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="申请状态"
+                android:id="@+id/tv_shenqingzhaungtai"
+                android:textColor="@color/henhui" />
+
+            <ImageView
+                android:id="@+id/shenqingzhuangtai_ima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x3"
+                android:src="@drawable/sanjiao" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+            android:id="@+id/pullLoadMoreRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/toumingdu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/touming" />
+    </RelativeLayout>
+
+</LinearLayout>

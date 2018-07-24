@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="@dimen/x13">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/x42"
+            android:src="@drawable/touxiang"
+            android:id="@+id/ima"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/x8"
+            android:id="@+id/name"
+            android:text="名字" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/x5"
+            android:text="好评"
+            android:id="@+id/pingjia"
+            android:textColor="@color/colorPrimary" />
+
+        <ImageView
+            android:layout_width="@dimen/x15"
+            android:layout_height="@dimen/x15"
+            android:id="@+id/xing1"
+            android:src="@drawable/hongxing" />
+
+        <View
+            android:layout_width="@dimen/x3"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="@dimen/x15"
+            android:layout_height="@dimen/x15"
+            android:id="@+id/xing2"
+            android:src="@drawable/hongxing" />
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="@dimen/x15"
+            android:layout_height="@dimen/x15"
+            android:id="@+id/xing3"
+            android:src="@drawable/hongxing" />
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="@dimen/x15"
+            android:layout_height="@dimen/x15"
+            android:id="@+id/xing4"
+            android:src="@drawable/hongxing" />
+
+        <View
+            android:layout_width="3dp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:layout_width="@dimen/x15"
+            android:layout_height="@dimen/x15"
+            android:id="@+id/xing5"
+            android:src="@drawable/hongxing" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/body"
+        android:minLines="3"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:text="实现通过服务器获取的数据，动态添加按钮，可以设置每页显示的个数实现通过服务器获取的数据，动态添加按钮，可以设置每页显示的个数"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/x5"
+        android:id="@+id/end"
+        android:text="6小时前评价 交易金额¥5800"
+        android:textColor="@color/henhui" />
+</LinearLayout>

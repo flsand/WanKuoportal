@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_bg"
+    android:orientation="vertical">
+
+
+    <RadioGroup
+        android:id="@+id/sell_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/in_the_sell_rb"
+            style="@style/orange_radio_button"
+            android:background="@drawable/table_selector"
+            android:text="出售中" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+        <RadioButton
+            android:id="@+id/sell_completed_rb"
+            style="@style/orange_radio_button"
+            android:background="@drawable/table_selector"
+            android:text="已完成" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/sell_nvn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/orange_radio_button"
+            android:text="买家昵称" />
+
+        <TextView
+            style="@style/orange_radio_button"
+            android:text="出售单价" />
+
+        <TextView
+            style="@style/orange_radio_button"
+            android:text="出售数量" />
+
+        <TextView
+            style="@style/orange_radio_button"
+            android:text="出售时间" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            layout="@layout/recyclerview_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+        <TextView
+            android:id="@+id/no_data_tv"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="暂无数据"/>
+    </RelativeLayout>
+</LinearLayout>

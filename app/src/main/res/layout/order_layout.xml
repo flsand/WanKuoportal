@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+     会员订单列表item
+ -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x36"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x13"
+            android:paddingRight="@dimen/x13">
+
+            <TextView
+                android:id="@+id/order_num"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="订单号：12345678" />
+
+            <TextView
+                android:id="@+id/order_result"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|right"
+                android:text="交易成功"
+                android:textColor="@color/colorPrimary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x89"
+            android:background="@color/grey"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x13"
+            android:paddingRight="@dimen/x13">
+
+            <ImageView
+                android:id="@+id/order_ima"
+                android:layout_width="@dimen/x75"
+                android:layout_height="@dimen/x75"
+                android:src="@drawable/t6" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/order_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="意大利+德国+英国四国游纯玩无购物" />
+
+                <TextView
+                    android:id="@+id/order_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="颜色：黑色"
+                    android:textColor="@color/henhui" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/order_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="10dp"
+                android:text="¥1530.00" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/order_gold"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x36"
+            android:background="@color/white"
+            android:paddingLeft="@dimen/x13"
+            android:paddingRight="@dimen/x13"
+            android:gravity="right|center_vertical"
+            android:text="合计：168个金币" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x36"
+            android:background="@color/white"
+            android:gravity="center"
+            android:visibility="gone"
+            android:id="@+id/duihuan_lin"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/x13"
+            android:paddingRight="@dimen/x13">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/order_duihuan"
+                android:layout_width="@dimen/x75"
+                android:layout_height="@dimen/x27"
+                android:background="@drawable/kuangjianli"
+                android:gravity="center"
+                android:text="付款"
+                android:textColor="@color/colorPrimary" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+
+    </LinearLayout>
+</LinearLayout>
+

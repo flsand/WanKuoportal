@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x66"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/x22">
+
+        <ImageView
+            android:id="@+id/dati_back"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/x42"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/x13"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/x5"
+            android:text="答题赚钱"
+            android:textColor="@color/white" />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/dati_banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x100" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x37"
+                android:orientation="horizontal"
+                android:padding="@dimen/x10">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/dati_jiangbei" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="答题排行" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/x10">
+
+                <com.example.administrator.wankuoportal.util.HorizontalListView
+                    android:id="@+id/dati_mingci"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x75" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/huise" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x175"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/wen_mydati"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x87"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/x19">
+
+                        <ImageView
+                            android:layout_width="@dimen/x28"
+                            android:layout_height="@dimen/x28"
+                            android:layout_gravity="center"
+                            android:src="@drawable/datijilu" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/x10"
+                            android:text="我的答题" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/wen_myjinbi"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x87"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/x19">
+
+                        <ImageView
+                            android:layout_width="@dimen/x28"
+                            android:layout_height="@dimen/x28"
+                            android:layout_gravity="center"
+                            android:src="@drawable/datijb" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/x10"
+                            android:text="我的金币" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/x114"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/wen_start"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x114"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/x114"
+                            android:layout_height="@dimen/x114"
+                            android:background="@drawable/dati_bt"
+                            android:gravity="center"
+                            android:padding="15dp"
+                            android:text="记忆赢大奖开始"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/x16" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/wen_myshuoming"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x87"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/x19">
+
+                        <ImageView
+                            android:layout_width="@dimen/x28"
+                            android:layout_height="@dimen/x28"
+                            android:layout_gravity="center"
+                            android:src="@drawable/datism" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/x10"
+                            android:text="答题说明" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/wen_mypaihang"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x87"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/x19">
+
+                        <ImageView
+                            android:layout_width="@dimen/x28"
+                            android:layout_height="@dimen/x28"
+                            android:layout_gravity="center"
+                            android:src="@drawable/datiph" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/x10"
+                            android:text="答题排行" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x10"
+                android:background="@color/huise" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x175"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/sc_mydati"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x87"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/x19">
+
+                        <ImageView
+                            android:layout_width="@dimen/x28"
+                            android:layout_height="@dimen/x28"
+                            android:layout_gravity="center"
+                            android:src="@drawable/datijilu" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/x10"
+                            android:text="我的答题" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sc_myjinbi"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x87"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/x19">
+
+                        <ImageView
+                            android:layout_width="@dimen/x28"
+                            android:layout_height="@dimen/x28"
+                            android:layout_gravity="center"
+                            android:src="@drawable/datijb" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/x10"
+                            android:text="我的金币" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="@dimen/x114"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:id="@+id/sc_start"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x114"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="@dimen/x114"
+                            android:layout_height="@dimen/x114"
+                            android:background="@drawable/dati_bt"
+                            android:gravity="center"
+                            android:padding="15dp"
+                            android:text="猜题赢大奖开始"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/x16" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/sc_myshuoming"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x87"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/x19">
+
+                        <ImageView
+                            android:layout_width="@dimen/x28"
+                            android:layout_height="@dimen/x28"
+                            android:layout_gravity="center"
+                            android:src="@drawable/datism" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/x10"
+                            android:text="答题说明" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/sc_mypaihang"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x87"
+                        android:orientation="vertical"
+                        android:paddingTop="@dimen/x19">
+
+                        <ImageView
+                            android:layout_width="@dimen/x28"
+                            android:layout_height="@dimen/x28"
+                            android:layout_gravity="center"
+                            android:src="@drawable/datiph" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:padding="@dimen/x10"
+                            android:text="答题排行" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x10"
+                android:background="@color/huise" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x150"
+                android:src="@drawable/dati_guangao"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

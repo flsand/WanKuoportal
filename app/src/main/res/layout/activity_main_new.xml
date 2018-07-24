@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/main_contain_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <RadioGroup
+        android:id="@+id/main_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="-16dp"
+        android:background="@drawable/dd"
+        android:orientation="horizontal">
+
+        <com.flysand.mylibrary.customView.DrawableCenterRadioButton
+            android:id="@+id/main_rb"
+            style="@style/Main_RadioButton"
+            android:drawableTop="@drawable/tab_home_bk"
+            android:text="首页" />
+
+        <com.flysand.mylibrary.customView.DrawableCenterRadioButton
+            android:id="@+id/main_classification_rb"
+            style="@style/Main_RadioButton"
+            android:drawableTop="@drawable/tab_classification_bk"
+            android:text="商家分类" />
+
+        <com.flysand.mylibrary.customView.DrawableCenterRadioButton
+            android:id="@+id/main_release_rb"
+            style="@style/Main_RadioButton"
+            android:layout_marginTop="-5dp"
+            android:drawableTop="@drawable/fbrw"
+            android:text="发布需求"
+            app:drawableHeight="38dp"
+            app:drawableWidth="38dp" />
+
+        <com.flysand.mylibrary.customView.DrawableCenterRadioButton
+            android:id="@+id/main_answer_rb"
+            style="@style/Main_RadioButton"
+            android:drawableTop="@drawable/tab_answer_bk"
+            android:text="答题赚钱" />
+
+        <com.flysand.mylibrary.customView.DrawableCenterRadioButton
+            android:id="@+id/main_my_rb"
+            style="@style/Main_RadioButton"
+            android:drawableTop="@drawable/tab_my_bk"
+            android:text="我的" />
+
+    </RadioGroup>
+
+</LinearLayout>

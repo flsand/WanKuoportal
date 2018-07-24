@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.wankuoportal.ui.address.ManageAdressActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/x42"
+            android:layout_height="@dimen/x42"
+            android:padding="@dimen/x13"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="管理收货地址"
+            android:textColor="@color/white"
+            android:id="@+id/information_title"
+            android:textSize="18sp" />
+    </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/adress_list"
+        android:background="@color/grey"
+        android:divider="#00000000"
+        android:dividerHeight="0dip"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:text="添加新地址"
+        android:id="@+id/addaddress"
+        android:gravity="center"
+        android:textSize="18sp"/>
+</LinearLayout>

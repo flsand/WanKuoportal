@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x40"
+        android:gravity="center"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_medium"
+            android:text="全部"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/x3"
+            android:src="@drawable/sanjiao"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x50"
+        android:visibility="gone"
+        android:id="@+id/pingjia_lin"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/hao"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/font_medium"
+            android:text="好评" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/x30"
+            android:layout_gravity="center"
+            android:background="@color/huise" />
+
+        <TextView
+            android:id="@+id/zhong"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/font_medium"
+            android:text="中评" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/x30"
+            android:layout_gravity="center"
+            android:background="@color/huise" />
+
+        <TextView
+            android:id="@+id/cha"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="@dimen/font_medium"
+            android:text="差评" />
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/base_list"/>
+</LinearLayout>

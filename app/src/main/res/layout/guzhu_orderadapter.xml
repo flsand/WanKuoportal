@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+   雇主订单列表item
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x35"
+        style="@style/LinearLayoutStyles"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="订单号：1234564"
+            android:id="@+id/ordernum"
+            android:textColor="@color/henhui"
+            android:layout_weight="1"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:text="待托管"
+            android:id="@+id/ordertype"
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"/>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/LinearLayoutStyles"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/henhui"
+            android:id="@+id/name"
+            android:text="APP开发"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/x5"
+            android:id="@+id/price"
+            android:textColor="@color/henhui"
+            android:text="金额：¥12000.00"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/x5"
+            android:id="@+id/type"
+            android:textColor="@color/henhui"
+            android:text="模式：招标"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x37"
+        style="@style/LinearLayoutStyles"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:layout_width="@dimen/x75"
+            android:layout_height="@dimen/x25"
+            android:text="订单详情"
+            android:id="@+id/button1"
+            android:gravity="center"
+            android:background="@drawable/kuangjianli"/>
+        <View
+            android:layout_width="@dimen/x5"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:layout_width="@dimen/x75"
+            android:layout_height="@dimen/x25"
+            android:text="托管赏金"
+            android:id="@+id/button2"
+            android:gravity="center"
+            android:background="@drawable/kuangjianli"/>
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x5"/>
+
+</LinearLayout>

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.wankuoportal.ui.ZhaoPin.RecruitmentMainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x42"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ToolbarPopupTheme">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/x42"
+                android:layout_height="@dimen/x42"
+                android:padding="@dimen/x13"
+                android:src="@drawable/back" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/x5"
+                android:paddingLeft="@dimen/x10"
+                android:paddingRight="@dimen/x10"
+                android:paddingTop="@dimen/x5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/yuanxingjujiao"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/x10">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/sousuo" />
+
+                    <EditText
+                        android:id="@+id/search_shouye"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:paddingLeft="@dimen/x10" />
+
+                    <ImageView
+                        android:layout_width="@dimen/x20"
+                        android:layout_height="@dimen/x20"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/yuyin"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_width="@dimen/x42"
+                android:layout_height="@dimen/x42"
+                android:layout_gravity="center_horizontal"
+                android:padding="@dimen/x13"
+                android:id="@+id/fabujianli"
+                android:src="@drawable/fbjl" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/paixu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/didian"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/x13"
+            android:paddingTop="@dimen/x13"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+           >
+
+            <TextView
+                android:id="@+id/didian_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地点" />
+
+            <View
+                android:layout_width="@dimen/x5"
+                android:layout_height="match_parent" />
+
+            <ImageView
+
+                android:id="@+id/didian_ima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sanjiao" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/x20"
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:id="@+id/xinzi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/x13"
+            android:paddingTop="@dimen/x13"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/xinzi_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="薪资" />
+
+            <View
+                android:layout_width="@dimen/x5"
+                android:layout_height="match_parent" />
+
+            <ImageView
+
+                android:id="@+id/xinzi_ima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sanjiao" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/x20"
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:id="@+id/zhiye"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/x13"
+            android:paddingTop="@dimen/x13"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/zhiye_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="职业" />
+
+            <View
+                android:layout_width="@dimen/x5"
+                android:layout_height="match_parent" />
+
+            <ImageView
+
+                android:id="@+id/zhiye_ima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sanjiao" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="@dimen/x20"
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:id="@+id/more"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/x13"
+            android:paddingTop="@dimen/x13"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/more_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="更多" />
+
+            <View
+                android:layout_width="@dimen/x5"
+                android:layout_height="match_parent" />
+
+            <ImageView
+
+                android:id="@+id/more_ima"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/sanjiao" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+            android:id="@+id/pullLoadMoreRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/mo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+</LinearLayout>

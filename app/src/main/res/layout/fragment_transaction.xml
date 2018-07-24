@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_line">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/transaction_coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/mAppBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey_line"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="140dp">
+
+                    <include layout="@layout/banner_layout" />
+
+                    <ImageView
+                        android:id="@+id/transaction_banner_defult_icon"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@mipmap/defult_banner_bg"
+                        android:gravity="center"
+                        android:scaleType="fitXY" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="1px"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp">
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/information_icon" />
+
+
+                    <com.oushangfeng.marqueelayout.MarqueeLayout
+                        android:id="@+id/transaction_marquee_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="4"
+                        app:enableAlphaAnim="true"
+                        app:enableScaleAnim="false"
+                        app:orientation="up"
+                        app:switchTime="3000" />
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/commercial_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/ommercial_buy_rb"
+                        style="@style/orange_radio_button"
+                        android:background="@drawable/table_selector"
+                        android:text="我要买" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginRight="1dp"
+                        android:background="@color/white"
+                        android:minWidth="70dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:gravity="center"
+                            android:text="最新单价"
+                            android:textColor="@color/text_color_gray"
+                            android:textSize="10sp" />
+
+                        <TextView
+                            android:id="@+id/latest_price_tv"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:gravity="center"
+                            android:textColor="@color/text_orange"
+                            android:textSize="10sp"
+                            tools:text="￥0.01" />
+
+                    </LinearLayout>
+
+                    <RadioButton
+                        android:id="@+id/ommercial_sell_rb"
+                        style="@style/orange_radio_button"
+                        android:background="@drawable/table_selector"
+                        android:text="我要卖" />
+
+                </RadioGroup>
+
+
+                <RadioGroup
+                    android:id="@+id/transaction_sort_radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+                    <!--app:layout_scrollFlags="exitUntilCollapsed|enterAlways|enterAlwaysCollapsed">-->
+                    <RadioButton
+                        android:id="@+id/shor_defult_rb"
+                        style="@style/orange_radio_button"
+                        android:text="默认排序" />
+
+                    <com.example.administrator.wankuoportal.aaPackage.coustom.ToggleRadioButton
+                        android:id="@+id/sort_price_rb"
+                        style="@style/orange_radio_button"
+                        android:drawableRight="@drawable/sort_selector"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/unit_price"
+                        app:taggle_right_drawable="@drawable/down_arrow" />
+
+                    <com.example.administrator.wankuoportal.aaPackage.coustom.ToggleRadioButton
+                        android:id="@+id/sort_count_rb"
+                        style="@style/orange_radio_button"
+                        android:drawableRight="@drawable/sort_selector"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text="@string/wk_count"
+                        app:taggle_right_drawable="@drawable/down_arrow" />
+
+                    <com.example.administrator.wankuoportal.aaPackage.coustom.ToggleRadioButton
+                        android:id="@+id/sort_time_rb"
+                        style="@style/orange_radio_button"
+                        android:drawableRight="@drawable/sort_selector"
+                        android:paddingLeft="14dp"
+                        android:paddingRight="14dp"
+                        android:text="发布时间"
+                        app:taggle_right_drawable="@drawable/down_arrow" />
+
+                </RadioGroup>
+
+            </LinearLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/mRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/white"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <Button
+        android:id="@+id/no_data_tv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:paddingTop="120dp"
+        android:text="暂无数据"
+        android:layout_marginTop="260dp"
+        android:background="@android:color/transparent"
+        android:textSize="14sp" />
+
+</RelativeLayout>

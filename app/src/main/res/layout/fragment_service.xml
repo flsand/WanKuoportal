@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+    <com.flysand.mylibrary.customView.MyRadioGroup
+        android:id="@+id/fegment_service_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/comprehensive_tv"
+            style="@style/orange_radio_button"
+            android:checked="true"
+            android:text="综合排序"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <RadioButton
+                android:id="@+id/price_rb"
+                style="@style/orange_radio_button"
+                android:text="价格"
+                android:paddingLeft="16dp"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/price_select_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/shangxia"/>
+
+        </LinearLayout>
+
+        <RadioButton
+            android:id="@+id/sales_tv"
+            style="@style/orange_radio_button"
+            android:text="销量优先"
+            android:textSize="14sp" />
+
+    </com.flysand.mylibrary.customView.MyRadioGroup>
+
+    <View
+        android:id="@+id/grey"
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="@color/henhui" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/recyclerview_layout" />
+
+        <ImageView
+            android:id="@+id/nodata_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nodata_iocn"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+</LinearLayout>

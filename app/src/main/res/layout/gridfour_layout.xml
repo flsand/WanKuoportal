@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x105"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="@dimen/x188"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/x10">
+
+        <TextView
+            android:id="@+id/gridfour_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="开店赚钱"
+            android:textColor="@color/all_textc"
+            android:textSize="16sp"
+            tools:text="标题" />
+
+        <TextView
+            android:id="@+id/gridfour_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="2"
+            android:paddingTop="@dimen/x5"
+            android:text="开店赚钱"
+            android:singleLine="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="13sp"
+            tools:text="标题" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/x5"
+            android:paddingRight="@dimen/x5"
+            android:paddingTop="@dimen/x5">
+
+            <TextView
+                android:id="@+id/gridfour_business_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/read_shape"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:padding="2dp"
+                android:text="已入住商家"
+                android:textSize="12sp"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/gridfour_business_tv"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gridfour_business_num_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="59808"
+                    android:singleLine="true"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_red" />
+
+                <TextView
+                    android:id="@+id/gridfour_business_unit_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/家"
+                    android:textSize="10sp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/gridfour_ima"
+                android:layout_width="@dimen/x86"
+                android:layout_height="@dimen/x43"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/paotui" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.administrator.wankuoportal">
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".app.MyApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:icon">
+        <activity
+            android:name=".aaPackage.activity.WelcomeActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.MainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.zaaach.citypicker.activity.CitySecletActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            tools:replace="android:theme" />
+
+        <!-- //友盟账号密码 -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="599e3e3fb27b0a3b38001f67" />
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="64457825f9e7815c099a4181b798603a" />
+        <!-- //百度地图APP_key -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="uElFXcxqkH9yt4RqQkBN2Mq5lBF3OFfp" />
+        <meta-data
+            android:name="appId"
+            android:value="${APP_ID}" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+        <!-- 监听系统下载完成的广播 -->
+        <receiver
+            android:name=".util.DownloadReceiver"
+            tools:ignore="ExportedReceiver">
+            <intent-filter>
+                <action android:name="DownloadManager.ACTION_DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+                <action android:name="android.intent.action.DOWNLOAD_NOTIFICATION_CLICKED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- 新浪 -->
+
+        <activity
+            android:name=".WBShareActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- wx -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 微信支付回调函数 -->
+        <activity
+            android:name=".wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <!-- qq -->
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- 分享编辑页 -->
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+        /
+        <!-- 照相 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.administrator.wankuoportal.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths_public"
+                tools:replace="android:resource" />
+        </provider>
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".ui.denglu.LoginActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.denglu.RegisterActivity" />
+        <activity android:name=".ui.denglu.PassWordSetupActivity" />
+        <activity android:name=".ui.CityChooseActivity" />
+        <activity android:name=".ui.denglu.Personal_SetupActivity" />
+        <activity android:name=".ui.SetUp.PersonalDataActivity" />
+        <activity
+            android:name=".ui.DaTi.DaTi_WenActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WriteSplashTheme" />
+        <activity
+            android:name=".ui.DaTi.DaTi_CountdownActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WriteSplashTheme" />
+        <activity
+            android:name=".ui.DaTi.MemoryAnswerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WriteSplashTheme" />
+        <activity
+            android:name=".ui.DaTi.Wzy_AnswerSCActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WriteSplashTheme" />
+        <activity
+            android:name=".ui.DaTi.Wzy_TZ_Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WriteSplashTheme" />
+        <activity
+            android:name=".ui.DaTi.Wzy_AnswerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WriteSplashTheme" />
+        <activity
+            android:name=".ui.DaTi.JY_ResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/WriteSplashTheme" />
+        <activity
+            android:name=".ui.DaTi.FenXiangDialogActivity"
+            android:theme="@style/NewDialogStyle" />
+        <activity android:name=".ui.HuiYuanWoDe.MyInfoActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.MyDaTiActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.QianDaoJiLuActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.PTPingJiaActivity" />
+        <!-- 我的资产 -->
+        <activity android:name=".ui.HuiYuanWoDe.MyJinBiActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.JiBiDuiHuanActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.DetailJBActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.MyJianLiActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.DownLodeActivity" />
+        <activity android:name=".ui.SetUp.SetUpActivity" />
+        <activity android:name=".ui.SetUp.AboutUsActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.PushSetupActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.JianJieActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.ShenFenRenZhengActivity" />
+        <activity android:name=".ui.SetUp.ChangePassWordActivity" />
+        <activity android:name=".ui.address.ManageAdressActivity" />
+        <activity android:name=".ui.SetUp.AddAddressActivity" />
+        <activity android:name=".ui.address.ChangeAddressActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.ExchangeOrderActivity" />
+        <activity android:name=".ui.GuZhuWoDe.OrderGuZhuActivity" />
+        <activity android:name=".ui.GuZhuWoDe.TransactionEvaluationActivity" />
+        <activity android:name=".ui.OrderDetailActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.MyAccountActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.FastRealnameActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.ZhangHuJiHuoActivity" />
+        <activity android:name=".ui.SetUp.SetUpPhoneActivity" />
+        <activity android:name=".ui.SetUp.SetUpPhoneCodeActivity" />
+        <activity android:name=".ui.SetUp.SetUpNewPhoneActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.TiXianActivity" />
+        <activity android:name=".ui.SetUp.ChooseYHKActivity" />
+        <activity android:name=".ui.SetUp.SetupYHKActivity" />
+        <activity android:name=".ui.SetUp.AddYHKActivity" />
+        <activity android:name=".ui.Pay.PayChooseActivity" />
+        <activity android:name=".ui.Pay.PayRenWuActivity" />
+        <activity android:name=".ui.RenCai.MianShiYaoQingActivity" />
+        <activity android:name=".ui.denglu.ManDetailActivity" />
+        <activity android:name=".ui.faburenwu.RenWuActivity" />
+        <activity android:name=".ui.search.SearchActivity" />
+        <activity android:name=".ui.search.SearchResult_Activity" />
+        <activity android:name=".ui.CityHeHuo.CityPartnerActivity" />
+        <activity android:name=".ui.CityHeHuo.ServiceMerchantActivity" />
+        <activity android:name=".ui.SetUp.HelpActivity" />
+        <activity android:name=".ui.SetUp.Help_detailActivity" />
+        <activity android:name=".ui.faburenwu.ReleaseDemand_Activity" />
+        <activity
+            android:name=".ui.shop.ShopActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.SetUp.QuesitionDetailActivity" />
+        <activity android:name=".ui.denglu.PhoneRenZhengActivity" />
+        <activity android:name=".ui.shop.ShopDetailActivity" />
+        <activity android:name=".ui.shop.Shop_OrderActivity" />
+        <activity android:name=".ui.address.ChooseAddressActivity" />
+        <activity android:name=".ui.SetUp.InvitationActivity" />
+        <activity android:name=".ui.ZhaoPin.RecruitmentMainActivity" />
+        <activity android:name=".ui.ZhaoPin.RecruitmentDetailActivity" />
+        <activity android:name=".ui.ZhaoPin.ReleaseResumeActivity" />
+        <activity android:name=".ui.ZhaoPin.gerenxinxiActivity" />
+        <activity android:name=".ui.ZhaoPin.jiaoyuActivity" />
+        <activity android:name=".ui.ZhaoPin.gongzuoActivity" />
+        <activity android:name=".ui.ZhaoPin.GongzuoChooseActivity" />
+        <activity
+            android:name=".ui.Store.StoreMainActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".ui.Store.StoreAnLiActivity" />
+        <activity android:name=".ui.Store.StoreChanPinActivity" />
+        <activity android:name=".ui.DaTi.DTPaiHangActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.MyZhanghuActivity" />
+        <activity android:name=".ui.download.GuangGaoZhuActivity" />
+        <activity android:name=".ui.download.MeiTiZhuActivity" />
+        <activity android:name=".ui.download.FuWuShangActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.MyTuiJianActivity" />
+        <activity android:name=".ui.KaiDianActivity" />
+        <activity android:name=".ui.DaTi.ShuoMingActivity" />
+        <activity android:name=".ui.DaTi.WoDeDTActivity" />
+        <activity android:name=".ui.paotui.PaoTuiActivity" />
+        <activity android:name=".ui.ZiXunDetialActivity" />
+        <activity android:name=".ui.YXXY.YXXYActivity" />
+        <activity android:name=".ui.SHZX.SHZXActivity" />
+        <activity android:name=".ui.FenLeiResultActivity" />
+        <activity android:name=".ui.RenCai.RenCaiMainActivity" />
+        <activity android:name=".ui.RenCai.WanKuoRenCaiActivity" />
+        <activity android:name=".ui.Store.QueRenXuQiuActivity" />
+        <activity android:name=".ui.QYRZ.QYRZActivity" />
+        <activity android:name=".ui.GuZhuWoDe.MyCollectionActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.TransactionDetailsActivity" />
+        <activity android:name=".ui.GuZhuWoDe.MyInvoiceActivity" />
+        <activity android:name=".ui.GuZhuWoDe.MyReportActivity" />
+        <activity android:name=".ui.GuZhuWoDe.MyRefundActivity" />
+        <activity android:name=".ui.GuZhuWoDe.MyActivistActivity" />
+        <activity android:name=".ui.SetUp.YiJianFanKuiActivity" />
+        <activity android:name=".ui.SetUp.TenXinTiaoActivity" />
+        <activity android:name=".ui.SetUp.FuWuXieYiActivity" />
+        <activity android:name=".ui.FWSJ.FWSJActivity" />
+        <activity android:name=".ui.XWGG.XWGGActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.MemberActivity" />
+        <activity android:name=".ui.XWGG.WebActivity" />
+        <!-- 信息详情 -->
+        <activity android:name=".ui.XWGG.XinXiDetailsActivity" />
+        <activity android:name=".ui.Pay.PayResultActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.ErWeiMaActivity" />
+        <activity android:name=".ui.shop.SHopResultActivity" />
+        <activity android:name=".ui.QYRZ.InformationActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.MemberPayActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.MemberTopHintActivity" />
+        <activity android:name=".ui.HuiYuanWoDe.MemberPaySelectActivity" />
+        <activity android:name=".ui.notify.NotifyDetailActivity" />
+        <activity android:name=".ui.notify.NotifyWebDetailActivity" />
+        <activity
+            android:name=".ui.Pay.ChongZhiActivity"
+            android:label="充值"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.team.MineTeamActivity_"
+            android:label="我的团队"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.smallstroe.SmallStoreActivity_"
+            android:label="我的万店"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.smallstroe.EditSmallStoreActivity_"
+            android:label="编辑微店"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.smallstroe.OrderStatisticsActivity_"
+            android:label="订单统计"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.task.LeadingTaskActivity_"
+            android:label="领任务赚钱"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.smallstroe.PlatformGoodsActivity_"
+            android:label="平台商品"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.HuiYuanWoDe.MyInfoDetailActivity" />
+        <activity android:name=".ui.ShouyeKaidianActivity" />
+        <activity android:name=".ui.MyTeamActivity" />
+        <activity
+            android:name=".ui.shop.BuySuccessActivity"
+            android:label="购买成功"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.shop.BuyFailActivity"
+            android:label="购买失败"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".aaPackage.activity.NewMainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.YXXY.MarketingActivity"
+            android:label="营销学院"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".aaPackage.activity.merchants.ClassificationDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".aaPackage.activity.dialogAcivity.SelectPayDialogActivity"
+            android:theme="@style/DialogStyleBottom" />
+        <activity
+            android:name=".aaPackage.activity.my.ServiceActivity"
+            android:label="雇主服务"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".aaPackage.activity.gold.TransactionSalaActivity"
+            android:label="@string/transction_title"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".aaPackage.activity.gold.GoldRegulationActivity"
+            android:label="万阔规则"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".aaPackage.activity.manor.ManorActivity"
+            android:label="选择身份"
+            android:screenOrientation="portrait" />
+        <activity android:name=".aaPackage.activity.manor.ManorHomeActivity" />
+        <activity android:name=".aaPackage.activity.manor.ManorListActivity"></activity>
+    </application>
+
+</manifest>
